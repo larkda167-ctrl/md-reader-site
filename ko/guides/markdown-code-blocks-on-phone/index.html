@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>휴대폰에서 마크다운 코드 블록 읽고 복사하는 법 · MD Reader</title>
+<meta name="description" content=".md 파일과 AI 답변 속 코드를 안드로이드에서 문법 색상, 가로 스크롤, 한 번에 복사하는 버튼과 함께 읽는 방법입니다.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-code-blocks-on-phone/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-code-blocks-on-phone/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="휴대폰에서 마크다운 코드 블록 읽고 복사하는 법 · MD Reader">
+<meta property="og:description" content=".md 파일과 AI 답변 속 코드를 안드로이드에서 문법 색상, 가로 스크롤, 한 번에 복사하는 버튼과 함께 읽는 방법입니다.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-code-blocks-on-phone/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "휴대폰에서 마크다운 코드 블록 읽고 복사하는 법", "description": ".md 파일과 AI 답변 속 코드를 안드로이드에서 문법 색상, 가로 스크롤, 한 번에 복사하는 버튼과 함께 읽는 방법입니다.", "inLanguage": "ko", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-code-blocks-on-phone/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ko/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ko/guides/">가이드</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ko/">홈</a> › <a href="/md-reader-site/ko/guides/">가이드</a></nav>
+<article class="doc">
+<h1>휴대폰에서 마크다운 코드 블록 읽고 복사하는 법</h1>
+<p class="meta">수정일: <time datetime="2026-10-29">2026-10-29</time></p>
+<p>마크다운에서 코드는 백틱 세 개 사이에 씁니다.</p>
+<pre><code class="language-markdown">```python
+def greet(name):
+    return f&quot;안녕하세요, {name}님!&quot;
+```
+</code></pre>
+<p>휴대폰에서 일반 텍스트 앱이 가장 크게 실패하는 곳이 바로 코드입니다. 줄이 중간에서 꺾이고, 들여쓰기가 망가지고(파이썬과 YAML에서는 치명적입니다), 색도 없고, 딱 필요한 부분만 골라 복사하기도 어렵습니다.</p>
+<h2>휴대폰 코드 뷰어에 필요한 것</h2>
+<ul>
+<li><strong>줄바꿈 없음:</strong> 긴 줄은 옆으로 넘겨 봐서 들여쓰기가 그대로 유지됩니다.</li>
+<li><strong>문법 색상:</strong> 코드 블록에 적힌 언어(<code>python</code>, <code>js</code>, <code>bash</code>…)에 맞춰 색을 입힙니다.</li>
+<li><strong>복사 버튼:</strong> 군더더기 공백이나 백틱 없이 코드 블록만 정확히 복사합니다.</li>
+<li><strong>고정폭 글꼴:</strong> 칸이 가지런히 맞습니다.</li>
+</ul>
+<h2>MD 리더의 코드 블록</h2>
+<p>MD 리더는 모든 코드 블록에 문법 색상과 가로 스크롤을 적용하고, 블록 위쪽에 <strong>복사</strong> 버튼을 붙입니다.</p>
+<ol>
+<li><code>.md</code> 파일이나 README를 열거나, <strong>클립보드에서 붙여넣기</strong>로 AI 답변을 붙여 넣습니다.</li>
+<li>긴 줄은 옆으로 밉니다.</li>
+<li>블록의 <strong>복사</strong>를 누르면 <strong>복사됨 ✓</strong>이 보입니다.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dmarkdown-code-blocks-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a></p>
+<h2>이럴 때 쓰세요</h2>
+<ul>
+<li><strong>README의 설치 명령어:</strong> Termux 같은 터미널 앱에 붙여 넣거나 컴퓨터로 보냅니다. <a href="../readme-md-viewer-android/">안드로이드에서 README.md 보기</a>를 참고하세요.</li>
+<li><strong>AI 답변 속 코드:</strong> ChatGPT와 Claude는 코드를 코드 블록에 넣습니다. 답변을 MD 리더에 붙여 넣으면 제대로 읽고 블록 하나씩 복사할 수 있습니다. <a href="../view-chatgpt-markdown-on-phone/">ChatGPT 답변 깔끔하게 보기</a>를 참고하세요.</li>
+<li><strong>설정 파일 조각(YAML, JSON):</strong> 들여쓰기가 중요한 코드입니다.</li>
+<li><strong>diff:</strong> <code>diff</code> 블록은 추가된 줄과 지워진 줄을 색으로 구분합니다.</li>
+</ul>
+<h2>팁</h2>
+<ul>
+<li>코드에 색이 없다면 코드 블록에 언어 이름이 빠졌을 수 있습니다. <code>```python</code>은 색이 입혀지고, 그냥 <code>```</code>은 입혀지지 않습니다.</li>
+<li>긴 줄은 휴대폰을 가로로 돌리거나 <strong>본문 너비 → 넓게</strong>로 보세요. <a href="../comfortable-reading-settings/">편하게 읽는 설정</a>을 참고하세요.</li>
+<li><code>mermaid</code> 블록은 코드 대신 다이어그램으로 그려집니다. <a href="../mermaid-diagrams-android/">Mermaid 다이어그램 보기</a>를 참고하세요.</li>
+</ul>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD 리더 써 보기</strong><p>안드로이드용 무료 마크다운 뷰어·편집기. 회원가입, 광고, 인터넷 권한이 없습니다.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dmarkdown-code-blocks-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a><small>무료 · Pro는 한 번만 결제 · 광고 없음</small></div></aside>
+<section class="related"><h2>함께 보면 좋은 가이드</h2><ul class="guides"><li><a href="/md-reader-site/ko/guides/readme-md-viewer-android/">안드로이드에서 README.md 파일 보는 법</a><span>깃허브 프로젝트나 압축 파일에 들어 있는 README.md를 안드로이드 휴대폰에서 제목, 표, 코드까지 깔끔하게 읽는 방법입니다.</span></li><li><a href="/md-reader-site/ko/guides/view-chatgpt-markdown-on-phone/">ChatGPT 답변을 휴대폰에서 문서처럼 깔끔하게 보는 법</a><span>ChatGPT 답변을 복사했더니 서식이 깨졌나요? 마크다운 뷰어에 붙여 넣으면 안드로이드에서도 제목, 표, 코드가 그대로 살아납니다.</span></li><li><a href="/md-reader-site/ko/guides/mermaid-diagrams-android/">안드로이드에서 Mermaid 다이어그램 보는 법</a><span>마크다운 속 Mermaid 다이어그램이 코드로만 보이나요? 안드로이드에서 순서도와 시퀀스 다이어그램을 오프라인으로 그려 보는 방법입니다.</span></li><li><a href="/md-reader-site/ko/guides/comfortable-reading-settings/">안드로이드에서 마크다운 다크 모드·글자 크기 설정하는 법</a><span>긴 .md 문서를 눈 편하게 읽으세요. OLED용 블랙을 포함한 테마, 글자 크기, 본문 너비, 명조 글꼴을 안드로이드에서 설정하는 방법입니다.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD 리더는 안드로이드용 오프라인 마크다운 뷰어·편집기입니다.</p>
+  <p><a href="/md-reader-site/ko/guides/">전체 가이드</a> · <a href="/md-reader-site/ko/privacy/">개인정보처리방침</a> · 문의: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="언어"><a href="/md-reader-site/guides/markdown-code-blocks-on-phone/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/markdown-code-blocks-on-phone/" hreflang="ko" aria-current="true">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

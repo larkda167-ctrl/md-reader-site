@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline markdown viewer for Android: why &quot;no internet permission&quot; matters · MD Reader</title>
+<meta name="description" content="Your notes and documents are private. Here&#x27;s how to check whether a markdown app can send your files anywhere, and what a truly offline viewer looks like.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Offline markdown viewer for Android: why &quot;no internet permission&quot; matters · MD Reader">
+<meta property="og:description" content="Your notes and documents are private. Here&#x27;s how to check whether a markdown app can send your files anywhere, and what a truly offline viewer looks like.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Offline markdown viewer for Android: why \"no internet permission\" matters", "description": "Your notes and documents are private. Here's how to check whether a markdown app can send your files anywhere, and what a truly offline viewer looks like.", "inLanguage": "en", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>Offline markdown viewer for Android: why &quot;no internet permission&quot; matters</h1>
+<p class="meta">Updated: <time datetime="2026-10-29">2026-10-29</time></p>
+<p>Markdown files are often personal: journal entries, work notes, meeting minutes, health logs, AI answers about private questions. Before you open them in an app, it's worth asking one question: <strong>can this app send my files anywhere?</strong></p>
+<h2>The quickest check: the Internet permission</h2>
+<p>On Android, an app needs the <strong>Internet</strong> permission to connect to any server. Without it, it physically cannot upload anything: not your files, not analytics, not ads.</p>
+<p>To check an app:</p>
+<ol>
+<li>On its Google Play page, scroll to <strong>About this app</strong> and look for <strong>App permissions</strong> (you may need to tap <strong>See more</strong>).</li>
+<li>Or, on your phone, go to <strong>Settings → Apps → [the app] → Permissions → All permissions</strong> (wording varies by phone).</li>
+<li>Look for <strong>"have full network access"</strong>. If it's there, the app can use the internet.</li>
+</ol>
+<p>Also read the <strong>Data safety</strong> section on Google Play. It shows what the developer says the app collects and shares.</p>
+<h2>What "offline" should really mean</h2>
+<p>A truly offline markdown viewer:</p>
+<ul>
+<li>Doesn't request network access at all</li>
+<li>Has no ads (ads need the internet)</li>
+<li>Has no analytics or crash-reporting SDKs</li>
+<li>Doesn't need an account</li>
+<li>Renders everything, including math and diagrams, with code bundled in the app instead of loading it from the web</li>
+</ul>
+<h2>MD Reader is built this way</h2>
+<p>MD Reader doesn't request the Internet permission. It contains no ads, analytics or trackers and needs no sign-in. Math (KaTeX) and diagrams (Mermaid) are bundled with the app, so they render on a plane just as they do at home.</p>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Doffline-markdown-viewer" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<p>The trade-off: images that point to web addresses won't load, because the app can't fetch them. Text, tables, code, math and diagrams all work.</p>
+<p>The <a href="../../privacy/">privacy policy</a> is short, because there's nothing to collect.</p>
+<h2>What happens when you tap a link?</h2>
+<p>Links in a document open in your browser or another app you choose. That app has its own permissions. MD Reader just hands the link over.</p>
+<h2>Good habits for private notes</h2>
+<ul>
+<li>Keep sensitive notes in local storage instead of shared folders</li>
+<li>Convert to PDF on the device instead of using online converters. See <a href="../markdown-to-pdf-android/">markdown to PDF on Android</a>.</li>
+<li>Check permissions again after big app updates</li>
+</ul>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Doffline-markdown-viewer" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · one-time Pro upgrade · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/open-md-file-android/">How to open a .md file on Android</a><span>Android has no built-in markdown viewer. Here&#x27;s how to open a .md file from Files, Downloads, Drive or an email and read it properly formatted.</span></li><li><a href="/md-reader-site/guides/markdown-to-pdf-android/">How to convert markdown to PDF on Android</a><span>Turn a .md file into a clean PDF on your phone, with no upload to a converter website. Uses Android&#x27;s built-in Save as PDF.</span></li><li><a href="/md-reader-site/guides/save-ai-answers-as-markdown/">How to save AI chat answers as markdown files on Android</a><span>Keep your best ChatGPT, Claude and Gemini answers as .md files on your phone, formatted, searchable and readable in any app.</span></li><li><a href="/md-reader-site/guides/what-is-md-file/">What is a .md file? (And how to open one on your phone)</a><span>A .md file is a markdown document, plain text with simple formatting symbols. Here&#x27;s what that means and how to read one on Android.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/offline-markdown-viewer/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/offline-markdown-viewer/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

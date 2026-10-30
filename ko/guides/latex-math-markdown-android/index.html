@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>안드로이드에서 마크다운 수식(LaTeX) 보는 법 · MD Reader</title>
+<meta name="description" content=".md 파일이나 AI 답변 속 수식이 $...$ 기호로만 보이나요? 안드로이드에서 LaTeX 수식을 오프라인으로 그려 보는 방법입니다.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/latex-math-markdown-android/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/latex-math-markdown-android/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="안드로이드에서 마크다운 수식(LaTeX) 보는 법 · MD Reader">
+<meta property="og:description" content=".md 파일이나 AI 답변 속 수식이 $...$ 기호로만 보이나요? 안드로이드에서 LaTeX 수식을 오프라인으로 그려 보는 방법입니다.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/latex-math-markdown-android/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "안드로이드에서 마크다운 수식(LaTeX) 보는 법", "description": ".md 파일이나 AI 답변 속 수식이 $...$ 기호로만 보이나요? 안드로이드에서 LaTeX 수식을 오프라인으로 그려 보는 방법입니다.", "inLanguage": "ko", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ko/guides/latex-math-markdown-android/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ko/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ko/guides/">가이드</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ko/">홈</a> › <a href="/md-reader-site/ko/guides/">가이드</a></nav>
+<article class="doc">
+<h1>안드로이드에서 마크다운 수식(LaTeX) 보는 법</h1>
+<p class="meta">수정일: <time datetime="2026-10-29">2026-10-29</time></p>
+<p>마크다운에는 원래 수식 문법이 없습니다. 대신 많은 도구가 달러 기호 사이에 <strong>LaTeX</strong>를 쓰는 방식을 지원합니다.</p>
+<pre><code class="language-markdown">문장 안: $E = mc^2$
+
+따로 한 줄:
+
+$$
+\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
+$$
+</code></pre>
+<p>수식을 지원하지 않는 뷰어에서는 이게 그대로 보입니다. 달러 기호, 역슬래시, 중괄호가 가득하죠. 수식이 많은 강의 노트, 논문 요약, AI 답변에서는 큰 문제입니다.</p>
+<h2>LaTeX 수식이 들어 있는 곳</h2>
+<ul>
+<li><strong>AI 답변:</strong> ChatGPT, Claude, Gemini는 수식을 LaTeX로 씁니다. 답변을 복사하면 원문이 따라옵니다.</li>
+<li><strong>공부 노트:</strong> Obsidian, 노션 내보내기, 주피터 같은 도구로 쓴 노트</li>
+<li><strong>기술 문서와 README</strong></li>
+</ul>
+<h2>안드로이드에서 수식 보기</h2>
+<p>MD 리더는 앱 안에 들어 있는 빠른 수식 엔진 KaTeX로 LaTeX를 그립니다. <strong>인터넷 없이</strong> 작동합니다.</p>
+<ol>
+<li><code>.md</code> 파일을 열거나, <strong>클립보드에서 붙여넣기</strong>로 AI 답변을 붙여 넣습니다.</li>
+<li>문장 안 수식(<code>$...$</code>)은 글 사이에, 블록 수식(<code>$$...$$</code>)은 가운데 정렬된 한 줄로 그려집니다.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dlatex-math-markdown-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a></p>
+<h2>지원하는 문법</h2>
+<p>노트와 AI 답변에서 보이는 대부분의 수식을 지원합니다.</p>
+<ul>
+<li>분수, 루트, 합, 적분: <code>\frac</code>, <code>\sqrt</code>, <code>\sum</code>, <code>\int</code></li>
+<li>그리스 문자와 기호: <code>\alpha</code>, <code>\infty</code>, <code>\leq</code></li>
+<li>행렬: <code>\begin{pmatrix} ... \end{pmatrix}</code></li>
+<li>정렬된 식: <code>\begin{aligned} ... \end{aligned}</code></li>
+</ul>
+<p>수식에 오타가 있어도 나머지 문서는 그대로 보이고, 틀린 수식은 표시되어서 찾기 쉽습니다.</p>
+<h2>팁</h2>
+<ul>
+<li><strong>긴 수식</strong>은 화면 밖으로 삐져나가지 않고 옆으로 넘겨 봅니다.</li>
+<li><strong>다크 모드</strong>에서도 수식이 잘 보입니다. <a href="../comfortable-reading-settings/">편하게 읽는 설정</a>을 참고하세요.</li>
+<li>기술적인 답변에는 수식과 함께 <strong>다이어그램</strong>이 나오기도 합니다. MD 리더는 이것도 그립니다. <a href="../mermaid-diagrams-android/">Mermaid 다이어그램 보기</a>를 참고하세요.</li>
+</ul>
+<h2>수식 보관하기</h2>
+<p>AI 채팅에서 받은 수식이라면 <code>.md</code> 파일로 저장해 두세요. 계속 읽고 검색할 수 있습니다. <a href="../save-ai-answers-as-markdown/">AI 답변을 마크다운 파일로 저장하기</a>를 참고하세요.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD 리더 써 보기</strong><p>안드로이드용 무료 마크다운 뷰어·편집기. 회원가입, 광고, 인터넷 권한이 없습니다.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ko&amp;referrer=utm_source%3Dsite%26utm_medium%3Dko%26utm_campaign%3Dlatex-math-markdown-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Play에서 받기</span></a><small>무료 · Pro는 한 번만 결제 · 광고 없음</small></div></aside>
+<section class="related"><h2>함께 보면 좋은 가이드</h2><ul class="guides"><li><a href="/md-reader-site/ko/guides/mermaid-diagrams-android/">안드로이드에서 Mermaid 다이어그램 보는 법</a><span>마크다운 속 Mermaid 다이어그램이 코드로만 보이나요? 안드로이드에서 순서도와 시퀀스 다이어그램을 오프라인으로 그려 보는 방법입니다.</span></li><li><a href="/md-reader-site/ko/guides/view-chatgpt-markdown-on-phone/">ChatGPT 답변을 휴대폰에서 문서처럼 깔끔하게 보는 법</a><span>ChatGPT 답변을 복사했더니 서식이 깨졌나요? 마크다운 뷰어에 붙여 넣으면 안드로이드에서도 제목, 표, 코드가 그대로 살아납니다.</span></li><li><a href="/md-reader-site/ko/guides/claude-markdown-on-android/">안드로이드에서 Claude 답변 읽고 저장하는 법</a><span>Claude의 긴 답변과 문서는 마크다운으로 되어 있습니다. 안드로이드에서 정리된 화면으로 읽고 .md 파일로 보관하는 방법입니다.</span></li><li><a href="/md-reader-site/ko/guides/save-ai-answers-as-markdown/">AI 답변을 마크다운 파일로 저장하는 법 (안드로이드)</a><span>ChatGPT, Claude, Gemini의 좋은 답변을 휴대폰에 .md 파일로 보관하세요. 서식은 그대로, 검색도 되고, 어떤 앱에서나 열립니다.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD 리더는 안드로이드용 오프라인 마크다운 뷰어·편집기입니다.</p>
+  <p><a href="/md-reader-site/ko/guides/">전체 가이드</a> · <a href="/md-reader-site/ko/privacy/">개인정보처리방침</a> · 문의: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="언어"><a href="/md-reader-site/guides/latex-math-markdown-android/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/latex-math-markdown-android/" hreflang="ko" aria-current="true">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fix: &quot;No app can open this file&quot; for .md files on Android · MD Reader</title>
+<meta name="description" content="Android says no app can open your .md file? Here&#x27;s why it happens and how to fix it in a minute.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/no-app-can-open-md-file/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/no-app-can-open-md-file/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/no-app-can-open-md-file/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/no-app-can-open-md-file/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fix: &quot;No app can open this file&quot; for .md files on Android · MD Reader">
+<meta property="og:description" content="Android says no app can open your .md file? Here&#x27;s why it happens and how to fix it in a minute.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/no-app-can-open-md-file/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Fix: \"No app can open this file\" for .md files on Android", "description": "Android says no app can open your .md file? Here's why it happens and how to fix it in a minute.", "inLanguage": "en", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/no-app-can-open-md-file/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>Fix: &quot;No app can open this file&quot; for .md files on Android</h1>
+<p class="meta">Updated: <time datetime="2026-10-29">2026-10-29</time></p>
+<p>You tap a <code>.md</code> file and Android says <strong>"No app can open this file"</strong> (or "Can't open file"). The file is fine. Your phone just doesn't have an app registered for markdown.</p>
+<h2>Why it happens</h2>
+<p>Android picks an app based on the file's type. Markdown files are reported as <code>text/markdown</code>, or sometimes as a generic file type. Few pre-installed apps claim those, so Android has nothing to offer.</p>
+<h2>Fix: install a markdown viewer</h2>
+<ol>
+<li>Install <strong>MD Reader</strong> from Google Play. It registers itself for <code>.md</code> and <code>.markdown</code> files.</li>
+<li>Tap the file again.</li>
+<li>Choose <strong>MD Reader</strong> (and <strong>Always</strong>, if you like).</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dno-app-can-open-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<h2>Still not working?</h2>
+<p><strong>The file type is reported wrongly.</strong> Some apps send markdown as an unknown type, so no viewer appears in the list. Open MD Reader, tap <strong>Open file</strong>, and pick the file from the file picker. This always works.</p>
+<p><strong>The file is inside a zip.</strong> Extract it first. In Files by Google, tap the zip and choose <strong>Extract</strong>.</p>
+<p><strong>It's an attachment or cloud file.</strong> Download it, or use the app's <strong>Open with</strong> menu. See <a href="../open-md-email-attachment/">email attachments</a> and <a href="../open-md-from-google-drive/">Google Drive</a>.</p>
+<p><strong>It opens in the wrong app now.</strong> Go to <strong>Settings → Apps</strong>, find the app that opens it, then <strong>Open by default → Clear defaults</strong>. Tap the file again to choose.</p>
+<h2>What if it isn't really markdown?</h2>
+<p>Some programs use <code>.md</code> for other file types, for example old disk images or game data. If MD Reader shows random symbols instead of readable text, the file probably isn't markdown. A real markdown file is always readable text. See <a href="../what-is-md-file/">what a .md file is</a>.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dno-app-can-open-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · one-time Pro upgrade · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/open-md-file-android/">How to open a .md file on Android</a><span>Android has no built-in markdown viewer. Here&#x27;s how to open a .md file from Files, Downloads, Drive or an email and read it properly formatted.</span></li><li><a href="/md-reader-site/guides/what-is-md-file/">What is a .md file? (And how to open one on your phone)</a><span>A .md file is a markdown document, plain text with simple formatting symbols. Here&#x27;s what that means and how to read one on Android.</span></li><li><a href="/md-reader-site/guides/open-md-email-attachment/">How to open a .md email attachment on Android</a><span>Got a .md file in Gmail or Outlook on your phone? Here&#x27;s how to open the attachment formatted instead of as raw text.</span></li><li><a href="/md-reader-site/guides/open-md-from-google-drive/">How to open .md files from Google Drive on Android</a><span>Google Drive shows .md files as plain text or can&#x27;t preview them. Here&#x27;s how to open them formatted in a markdown viewer on Android.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/no-app-can-open-md-file/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/no-app-can-open-md-file/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

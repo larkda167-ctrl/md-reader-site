@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to view LaTeX math in markdown on Android · MD Reader</title>
+<meta name="description" content="Formulas in .md files and AI answers show up as $...$ code on most phones. Here&#x27;s how to render LaTeX math in markdown on Android, offline.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/latex-math-markdown-android/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to view LaTeX math in markdown on Android · MD Reader">
+<meta property="og:description" content="Formulas in .md files and AI answers show up as $...$ code on most phones. Here&#x27;s how to render LaTeX math in markdown on Android, offline.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to view LaTeX math in markdown on Android", "description": "Formulas in .md files and AI answers show up as $...$ code on most phones. Here's how to render LaTeX math in markdown on Android, offline.", "inLanguage": "en", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/latex-math-markdown-android/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>How to view LaTeX math in markdown on Android</h1>
+<p class="meta">Updated: <time datetime="2026-10-29">2026-10-29</time></p>
+<p>Markdown itself has no math syntax. Instead, many tools let you write <strong>LaTeX</strong> between dollar signs:</p>
+<pre><code class="language-markdown">Inline: $E = mc^2$
+
+Block:
+
+$$
+\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
+$$
+</code></pre>
+<p>In a viewer without math support, you see exactly that: dollar signs, backslashes and braces. That's a problem for lecture notes, research summaries and AI answers, which are full of formulas.</p>
+<h2>Where you'll meet LaTeX in markdown</h2>
+<ul>
+<li><strong>AI answers.</strong> ChatGPT, Claude and Gemini write formulas in LaTeX. When you copy an answer, you get the source.</li>
+<li><strong>Study notes</strong> written in Obsidian, Notion exports or Jupyter-style tools.</li>
+<li><strong>Technical READMEs</strong> and documentation.</li>
+</ul>
+<h2>Render math on Android</h2>
+<p>MD Reader renders LaTeX with KaTeX, a fast math renderer bundled inside the app. It works <strong>without internet</strong>.</p>
+<ol>
+<li>Open the <code>.md</code> file, or tap <strong>Paste from clipboard</strong> to paste an AI answer.</li>
+<li>Inline math (<code>$...$</code>) is drawn within the sentence. Block math (<code>$$...$$</code>) gets its own centered line.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dlatex-math-markdown-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<h2>Supported syntax</h2>
+<p>KaTeX covers most of what you'll see in notes and AI answers:</p>
+<ul>
+<li>Fractions, roots, sums and integrals: <code>\frac</code>, <code>\sqrt</code>, <code>\sum</code>, <code>\int</code></li>
+<li>Greek letters and symbols: <code>\alpha</code>, <code>\infty</code>, <code>\leq</code></li>
+<li>Matrices: <code>\begin{pmatrix} ... \end{pmatrix}</code></li>
+<li>Aligned equations: <code>\begin{aligned} ... \end{aligned}</code></li>
+</ul>
+<p>If a formula has a typo, the rest of the document still renders, and the broken formula is shown so you can find it.</p>
+<h2>Tips</h2>
+<ul>
+<li><strong>Long formulas</strong> scroll sideways instead of overflowing the screen.</li>
+<li><strong>Dark mode</strong> works with formulas too. See <a href="../comfortable-reading-settings/">comfortable reading settings</a>.</li>
+<li><strong>Diagrams</strong> often appear next to math in technical answers. MD Reader draws those as well. See <a href="../mermaid-diagrams-android/">Mermaid diagrams on Android</a>.</li>
+</ul>
+<h2>Keep your formulas</h2>
+<p>If the math came from an AI chat, save it as a <code>.md</code> file so it stays readable and searchable. See <a href="../save-ai-answers-as-markdown/">saving AI answers as markdown</a>.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dlatex-math-markdown-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · one-time Pro upgrade · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/mermaid-diagrams-android/">How to view Mermaid diagrams on Android</a><span>Mermaid diagrams in markdown show up as code on most phones. Here&#x27;s how to see flowcharts and sequence diagrams drawn on Android, offline.</span></li><li><a href="/md-reader-site/guides/view-chatgpt-markdown-on-phone/">How to read ChatGPT answers as formatted markdown on your phone</a><span>Copied a long ChatGPT answer and lost the formatting? Paste it into a markdown viewer to get headings, tables and code back on Android.</span></li><li><a href="/md-reader-site/guides/claude-markdown-on-android/">How to read and save Claude answers on Android</a><span>Claude&#x27;s long answers and documents are written in markdown. Here&#x27;s how to read them formatted and keep them as .md files on Android.</span></li><li><a href="/md-reader-site/guides/save-ai-answers-as-markdown/">How to save AI chat answers as markdown files on Android</a><span>Keep your best ChatGPT, Claude and Gemini answers as .md files on your phone, formatted, searchable and readable in any app.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/latex-math-markdown-android/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/latex-math-markdown-android/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

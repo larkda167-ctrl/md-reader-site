@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to view Mermaid diagrams on Android · MD Reader</title>
+<meta name="description" content="Mermaid diagrams in markdown show up as code on most phones. Here&#x27;s how to see flowcharts and sequence diagrams drawn on Android, offline.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/mermaid-diagrams-android/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/mermaid-diagrams-android/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/mermaid-diagrams-android/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/mermaid-diagrams-android/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to view Mermaid diagrams on Android · MD Reader">
+<meta property="og:description" content="Mermaid diagrams in markdown show up as code on most phones. Here&#x27;s how to see flowcharts and sequence diagrams drawn on Android, offline.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/mermaid-diagrams-android/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to view Mermaid diagrams on Android", "description": "Mermaid diagrams in markdown show up as code on most phones. Here's how to see flowcharts and sequence diagrams drawn on Android, offline.", "inLanguage": "en", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/mermaid-diagrams-android/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>How to view Mermaid diagrams on Android</h1>
+<p class="meta">Updated: <time datetime="2026-10-29">2026-10-29</time></p>
+<p><strong>Mermaid</strong> is a way to describe diagrams with text. In a markdown file it looks like a code block:</p>
+<pre><code class="language-markdown">```mermaid
+flowchart LR
+  A[Idea] --&gt; B{Worth it?}
+  B --&gt;|yes| C[Build]
+  B --&gt;|no| D[Drop]
+```
+</code></pre>
+<p>A viewer with Mermaid support turns this into a real flowchart. Without it, you only see the code.</p>
+<h2>Where Mermaid shows up</h2>
+<ul>
+<li><strong>README files and documentation</strong> on GitHub and GitLab, which render Mermaid on their websites</li>
+<li><strong>AI answers.</strong> Claude and ChatGPT often draw architecture, process or timeline diagrams in Mermaid</li>
+<li><strong>Notes apps</strong> like Obsidian</li>
+</ul>
+<h2>See Mermaid diagrams on your phone</h2>
+<p>MD Reader draws Mermaid diagrams inside the app, without an internet connection.</p>
+<ol>
+<li>Open the <code>.md</code> file, or paste text with <strong>Paste from clipboard</strong>.</li>
+<li>Every <code>mermaid</code> code block is drawn as a diagram.</li>
+<li>Tap <strong>Show code</strong> above a diagram to see its source, and <strong>Show diagram</strong> to switch back.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dmermaid-diagrams-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<h2>Supported diagram types</h2>
+<p>Mermaid supports many diagram types, including:</p>
+<ul>
+<li>Flowcharts (<code>flowchart</code>, <code>graph</code>)</li>
+<li>Sequence diagrams (<code>sequenceDiagram</code>)</li>
+<li>Class and state diagrams</li>
+<li>Gantt charts and timelines</li>
+<li>Pie charts</li>
+<li>Mind maps</li>
+</ul>
+<h2>"This diagram can't be drawn"</h2>
+<p>If a diagram has a syntax error, MD Reader shows a short message instead of a blank space. Then:</p>
+<ul>
+<li>Tap <strong>Show code</strong> to see the source.</li>
+<li>Check for a missing arrow, bracket or quote. A label with special characters usually needs quotes: <code>A["Step (1)"]</code>.</li>
+<li>If the diagram came from an AI chat that was still writing, copy the full answer again.</li>
+</ul>
+<h2>Big diagrams on small screens</h2>
+<p>Wide diagrams keep their full size and scroll sideways, so labels stay readable. For complex ones, turn the phone sideways or use a tablet. See <a href="../markdown-on-tablet-and-foldable/">reading markdown on tablets and foldables</a>.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dmermaid-diagrams-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · one-time Pro upgrade · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/latex-math-markdown-android/">How to view LaTeX math in markdown on Android</a><span>Formulas in .md files and AI answers show up as $...$ code on most phones. Here&#x27;s how to render LaTeX math in markdown on Android, offline.</span></li><li><a href="/md-reader-site/guides/readme-md-viewer-android/">How to read a README.md file on Android</a><span>Read README.md files from GitHub projects, downloads or zip files on your Android phone, with formatted headings, tables and highlighted code.</span></li><li><a href="/md-reader-site/guides/claude-markdown-on-android/">How to read and save Claude answers on Android</a><span>Claude&#x27;s long answers and documents are written in markdown. Here&#x27;s how to read them formatted and keep them as .md files on Android.</span></li><li><a href="/md-reader-site/guides/markdown-code-blocks-on-phone/">How to read and copy code from markdown files on your phone</a><span>Read code blocks in .md files and AI answers on Android with syntax highlighting, horizontal scrolling and one-tap copy.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/mermaid-diagrams-android/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/mermaid-diagrams-android/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/" hreflang="ja">日本語</a><a href="/md-reader-site/es/" hreflang="es">Español</a><a href="/md-reader-site/pt/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>
