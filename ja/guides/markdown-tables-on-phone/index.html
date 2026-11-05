@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマホで Markdown の表を綺麗に読む方法 · MD Reader</title>
+<meta name="description" content="スマホで Markdown の表が崩れるお悩み解決。横スクロールやレイアウト調整で、長くて大きな表も Android で快適に読むコツをご紹介します。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-tables-on-phone/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-tables-on-phone/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-tables-on-phone/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-tables-on-phone/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-tables-on-phone/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/markdown-tables-on-phone/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-tables-on-phone/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="スマホで Markdown の表を綺麗に読む方法 · MD Reader">
+<meta property="og:description" content="スマホで Markdown の表が崩れるお悩み解決。横スクロールやレイアウト調整で、長くて大きな表も Android で快適に読むコツをご紹介します。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-tables-on-phone/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマホで Markdown の表を綺麗に読む方法", "description": "スマホで Markdown の表が崩れるお悩み解決。横スクロールやレイアウト調整で、長くて大きな表も Android で快適に読むコツをご紹介します。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-tables-on-phone/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>スマホで Markdown の表を綺麗に読む方法</h1>
+<p class="meta">更新日: <time datetime="2026-11-05">2026-11-05</time></p>
+<p>Markdown の表は、次のように記述されます。</p>
+<pre><code class="language-markdown">| プラン | 価格 | 容量 | サポート |
+|---|---:|---|---|
+| 無料 | 0円 | 5 GB | メール |
+| プロ | 800円 | 100 GB | チャット |
+</code></pre>
+<p>スマホのテキストエディタで開くと、<code>|</code> が折り返されてしまい、何が書いてあるかほとんど読み取れなくなります。Markdown 対応アプリであっても、無理にすべての列を画面幅に押し込もうとして、1セルが1文字幅になってしまうことも珍しくありません。</p>
+<h2>スマホで表を読みやすくするために必要なこと</h2>
+<ul>
+<li><strong>横スクロール。</strong> 表本来の幅を維持したまま、横方向にスワイプして閲覧できること。各セルのテキストが1〜2行できれいに収まります。</li>
+<li><strong>配置（アライメント）。</strong> <code>---:</code> は右揃え（数値に向いています）、<code>:---:</code> は中央揃えを表します。優れたビューアであれば、この指定がきちんと反映されます。</li>
+<li><strong>セルの修飾。</strong> セル内の太字、コード、リンクも適切に装飾されること。</li>
+</ul>
+<h2>MD Reader で表を読む</h2>
+<p>MD Reader は GitHub 形式の表に対応しています。幅の広い表はページ内で横スクロールできるため、文章の他の部分が崩れることはありません。</p>
+<ol>
+<li><code>.md</code> ファイルを開くか、<strong>クリップボードから貼り付け</strong>でテキストを貼り付けます。</li>
+<li>表の上を左右にスワイプして、すべての列を確認します。</li>
+<li>とりわけ大きな表の場合は、スマホを横向きにすると一度により多くの列を見渡せます。</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmarkdown-tables-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<h2>大きな表を読むためのヒント</h2>
+<ul>
+<li><strong>横向きにするか、タブレットを使う。</strong> タブレットや折りたたみ端末では、MD Reader はより広いレイアウトに自動調整されます。<a href="/md-reader-site/guides/markdown-on-tablet-and-foldable/">タブレットや折りたたみ端末での読書</a>をご覧ください。</li>
+<li><strong>本文の幅を変更する。</strong> <strong>表示設定</strong>を開き、<strong>本文の幅</strong>を<strong>広い</strong>または<strong>最大</strong>に設定すると、表により多くのスペースを割り当てることができます。<a href="/md-reader-site/guides/comfortable-reading-settings/">読みやすい表示設定</a>も参考にしてください。</li>
+<li><strong>文字サイズを小さくする</strong>と、多くの列を一度に比較したい文書を読む際に便利です。</li>
+</ul>
+<h2>AI の回答に含まれる表</h2>
+<p>ChatGPT、Claude、Gemini は比較表の作成が得意です。AI の回答をコピーすると、表は Markdown の原文として保持されます。これを MD Reader に貼り付ければ、実際の表としてきれいに表示されます。<a href="../view-chatgpt-markdown-on-phone/">ChatGPT の回答を整形された Markdown として読む</a>をご覧ください。</p>
+<h2>表がプレーンテキストのまま表示されてしまう原因</h2>
+<p>よくある原因:</p>
+<ul>
+<li>1行目の下にヘッダーの区切り行（<code>|---|---|</code>）がない場合。</li>
+<li>表の前に空行が抜けている場合。</li>
+<li>各行の <code>|</code> による列数が一致していない場合。</li>
+</ul>
+<p>これらは元のデータで修正（MD Reader の<strong>Markdown 原文で編集</strong>を使用）すれば、正しく表としてレンダリングされます。</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmarkdown-tables-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは近日公開 · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/view-chatgpt-markdown-on-phone/">ChatGPT の回答をスマホで綺麗に読む方法</a><span>ChatGPT の長い回答をコピーして崩れていませんか？Android の Markdown ビューアーに貼り付ければ、見出しや表、コードが綺麗に復活します。</span></li><li><a href="/md-reader-site/ja/guides/md-file-shows-symbols/">Markdown ファイルで # や ** が消えない理由と対策</a><span>Android で .md ファイルを開いたときに # や ** がそのまま表示されてしまう理由と、きれいにフォーマットして閲覧する方法を解説します。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/markdown-tables-on-phone/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/markdown-tables-on-phone/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/markdown-tables-on-phone/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/markdown-tables-on-phone/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/markdown-tables-on-phone/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

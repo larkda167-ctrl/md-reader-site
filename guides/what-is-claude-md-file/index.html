@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is a CLAUDE.md file? What it does and what to put in it · MD Reader</title>
+<meta name="description" content="CLAUDE.md is a text file of standing instructions that Claude Code reads at the start of every session. Here&#x27;s what goes in it and whether you need one.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-claude-md-file/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-claude-md-file/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/what-is-claude-md-file/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/what-is-claude-md-file/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/what-is-claude-md-file/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-claude-md-file/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-claude-md-file/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is a CLAUDE.md file? What it does and what to put in it · MD Reader">
+<meta property="og:description" content="CLAUDE.md is a text file of standing instructions that Claude Code reads at the start of every session. Here&#x27;s what goes in it and whether you need one.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-claude-md-file/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What is a CLAUDE.md file? What it does and what to put in it", "description": "CLAUDE.md is a text file of standing instructions that Claude Code reads at the start of every session. Here's what goes in it and whether you need one.", "inLanguage": "en", "datePublished": "2026-11-03", "dateModified": "2026-11-03", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-claude-md-file/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>What is a CLAUDE.md file? What it does and what to put in it</h1>
+<p class="meta">Updated: <time datetime="2026-11-03">2026-11-03</time></p>
+<p>A <code>CLAUDE.md</code> file is a plain text file of standing instructions for Claude Code, Anthropic's coding agent. Claude Code reads it at the start of every session, so you don't have to repeat your test command or project rules each time.</p>
+<p>It's written in markdown and doesn't run anything by itself, so opening it to read it is safe. Editing it is different: the agent will act on what you change.</p>
+<h2>What goes in it</h2>
+<p>There's no required format. The most useful lines are things the agent can't work out by reading your code:</p>
+<ul>
+<li><strong>Commands:</strong> how to build and test, so it can check its own work</li>
+<li><strong>Rules your project follows:</strong> for example, where user-facing text must live</li>
+<li><strong>Warnings:</strong> a folder not to touch, or a mistake it keeps repeating</li>
+</ul>
+<p>A small one looks like this:</p>
+<pre><code class="language-markdown"># CLAUDE.md
+
+## Commands
+- Test: npm test (run this before you finish)
+
+## Rules
+- Don't edit files in /generated
+- Keep user-facing text in src/i18n
+</code></pre>
+<p>Anthropic's <a href="https://code.claude.com/docs/en/memory">memory documentation</a> suggests staying under 200 lines, because longer files use more of the agent's attention and get followed less reliably.</p>
+<h2>Where it goes</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CLAUDE.md</code> in the project's top folder</td>
+<td>Instructions for the project, usually shared through git</td>
+</tr>
+<tr>
+<td><code>CLAUDE.md</code> in a subfolder</td>
+<td>Instructions read when the agent works in that folder</td>
+</tr>
+<tr>
+<td><code>~/.claude/CLAUDE.md</code></td>
+<td>Your personal preferences across all projects</td>
+</tr>
+<tr>
+<td><code>CLAUDE.local.md</code></td>
+<td>Your private notes for one project. Keep it out of git</td>
+</tr>
+</tbody>
+</table>
+<p>Files in the folders above where you start Claude Code are also loaded. They're combined rather than replacing each other, so contradictions can confuse the agent.</p>
+<h2>How to make one</h2>
+<p>In Claude Code, run <code>/init</code>. It looks through your project and drafts a file with the build commands and conventions it finds. Then add what it couldn't discover.</p>
+<p>You don't need one on day one. A good time to start is when you correct the same mistake twice. Add one line, and the next session already knows.</p>
+<h2>What it can't do</h2>
+<p>Claude Code treats the file as guidance, not as a hard rule, so it usually follows an instruction but isn't forced to. If something must never happen, Anthropic recommends a hook, which the tool enforces every time. Adding "IMPORTANT" to a line rarely fixes the problem.</p>
+<p>Don't put passwords or API keys in it. Project files are usually committed along with the code, so anyone who can see the project can read them.</p>
+<h2>CLAUDE.md and AGENTS.md</h2>
+<p><code>AGENTS.md</code> does a similar job for other tools such as Codex, and Claude Code can also read one that's already in your project. Our guide to <a href="../claude-code-codex-md-files/">the .md files coding agents create</a> explains the others you may see.</p>
+<h2>Reading it on your phone</h2>
+<p>Opened in a plain text app, the file shows raw <code>#</code> and <code>**</code> symbols. To read it formatted on Android:</p>
+<ol>
+<li>Send it to your phone. Claude Code usually runs on a computer, so use Google Drive, an email attachment or a USB cable.</li>
+<li>Tap the file and choose <strong>MD Reader</strong>, or use <strong>Open file</strong> in the app.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dwhat-is-claude-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<p>Headings, tables and code blocks appear formatted, and <strong>Contents</strong> lets you jump between sections. Tags like <code>&lt;example&gt;</code>, which are common in instruction files, are shown as written instead of disappearing. For Drive, see <a href="../open-md-from-google-drive/">how to open .md files from Google Drive</a>.</p>
+<p>MD Reader doesn't connect to Claude Code or sync with your computer, so what you're reading is a copy. Send it again after it changes. You can tap <strong>Edit</strong> and change the copy, but Claude Code won't see that until you send the file back to your computer.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dwhat-is-claude-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · Pro coming soon · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/claude-code-codex-md-files/">What are the .md files Claude Code and Codex create?</a><span>Ask Claude Code or Codex to do something and .md files pile up in your project. Here&#x27;s what they are, which ones matter, and how to read them on your phone.</span></li><li><a href="/md-reader-site/guides/open-md-from-google-drive/">How to open .md files from Google Drive on Android</a><span>Google Drive shows .md files as plain text or can&#x27;t preview them. Here&#x27;s how to open them formatted in a markdown viewer on Android.</span></li><li><a href="/md-reader-site/guides/edit-markdown-without-syntax/">How to edit a markdown file without learning markdown</a><span>Edit .md files on Android like a normal document. Type on the formatted page and the markdown symbols are written for you.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/what-is-claude-md-file/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/what-is-claude-md-file/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/what-is-claude-md-file/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/what-is-claude-md-file/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/what-is-claude-md-file/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

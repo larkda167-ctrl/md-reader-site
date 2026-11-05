@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Por qué tu archivo .md muestra # y ** (y cómo solucionarlo) · MD Reader</title>
+<meta name="description" content="Si un archivo markdown se abre lleno de #, ** y |, se muestra como texto plano. Descubre cómo verlo con formato en Android.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/md-file-shows-symbols/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/md-file-shows-symbols/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Por qué tu archivo .md muestra # y ** (y cómo solucionarlo) · MD Reader">
+<meta property="og:description" content="Si un archivo markdown se abre lleno de #, ** y |, se muestra como texto plano. Descubre cómo verlo con formato en Android.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/es/guides/md-file-shows-symbols/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Por qué tu archivo .md muestra # y ** (y cómo solucionarlo)", "description": "Si un archivo markdown se abre lleno de #, ** y |, se muestra como texto plano. Descubre cómo verlo con formato en Android.", "inLanguage": "es", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/es/guides/md-file-shows-symbols/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/es/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/es/guides/">Guías</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/es/">Inicio</a> › <a href="/md-reader-site/es/guides/">Guías</a></nav>
+<article class="doc">
+<h1>Por qué tu archivo .md muestra # y ** (y cómo solucionarlo)</h1>
+<p class="meta">Actualizado: <time datetime="2026-11-04">2026-11-04</time></p>
+<p>Abres un archivo <code>.md</code> y ves algo así:</p>
+<pre><code class="language-text">## Meeting notes
+**Decision:** ship on *Friday*
+| Owner | Task |
+|---|---|
+| Sam | Release |
+</code></pre>
+<p>No hay nada roto. El archivo está bien. Se está abriendo con una aplicación que muestra <strong>texto plano</strong>, por lo que ves los símbolos de markdown en lugar del formato que describen.</p>
+<h2>Qué significan los símbolos</h2>
+<table>
+<thead>
+<tr>
+<th>Ves</th>
+<th>Significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Title</code>, <code>## Section</code></td>
+<td>Encabezados</td>
+</tr>
+<tr>
+<td><code>**text**</code></td>
+<td>Negrita</td>
+</tr>
+<tr>
+<td><code>*text*</code> or <code>_text_</code></td>
+<td>Cursiva</td>
+</tr>
+<tr>
+<td><code>- item</code></td>
+<td>Lista con viñetas</td>
+</tr>
+<tr>
+<td><code>- [ ] task</code></td>
+<td>Lista de tareas</td>
+</tr>
+<tr>
+<td><code>[text](https://…)</code></td>
+<td>Enlace</td>
+</tr>
+<tr>
+<td><code>\| a \| b \|</code> filas</td>
+<td>Tabla</td>
+</tr>
+<tr>
+<td>Líneas entre <code>```</code></td>
+<td>Bloque de código</td>
+</tr>
+<tr>
+<td><code>$x^2$</code></td>
+<td>Fórmula matemática</td>
+</tr>
+</tbody>
+</table>
+<h2>La solución: ábrelo en un visor de markdown</h2>
+<p>Un visor de markdown lee los símbolos y dibuja el formato: encabezados reales, texto en negrita, tablas y casillas en las que se puede pulsar.</p>
+<ol>
+<li>Instala <strong>MD Reader</strong> desde Google Play.</li>
+<li>Abre el archivo de nuevo y elige MD Reader. Si tu teléfono siempre usa la aplicación de texto, consulta a continuación.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dmd-file-shows-symbols" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a></p>
+<h2>El archivo se sigue abriendo en la aplicación incorrecta</h2>
+<p>Android recuerda la aplicación que elegiste con <strong>Siempre</strong>. Para cambiarlo:</p>
+<ol>
+<li>Ve a <strong>Ajustes → Aplicaciones</strong> y busca la aplicación que abre los archivos <code>.md</code> ahora (un editor de texto o navegador).</li>
+<li>Toca <strong>Abrir de manera predeterminada</strong> (o <strong>Establecer como predeterminada</strong>) → <strong>Borrar valores predeterminados</strong>.</li>
+<li>Toca el archivo <code>.md</code> de nuevo. Android te preguntará qué aplicación usar. Elige MD Reader.</li>
+</ol>
+<p>Los nombres de los menús varían un poco según la marca del teléfono. Siempre puedes omitir esto y abrir el archivo desde dentro de MD Reader con <strong>Abrir archivo</strong>.</p>
+<h2>El texto es de una app de IA, no de un archivo</h2>
+<p>Si copiaste una respuesta de ChatGPT o Claude y la pegaste en un lugar que muestra símbolos, pégala en MD Reader con <strong>Pegar del portapapeles</strong> en su lugar. Consulta <a href="../view-chatgpt-markdown-on-phone/">ver respuestas de ChatGPT con formato en el teléfono</a>.</p>
+<h2>Quiero editarlo sin los símbolos</h2>
+<p>No necesitas aprender markdown para cambiar un documento. En MD Reader, toca <strong>Editar</strong> y escribe en la página con formato. Los símbolos se escriben por ti. Consulta <a href="/md-reader-site/guides/edit-markdown-without-syntax/">editar markdown sin sintaxis</a>.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Prueba MD Reader</strong><p>Un visor y editor de Markdown gratis para Android. Sin cuenta, sin anuncios y sin permiso de internet.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dmd-file-shows-symbols" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a><small>Gratis · Pro próximamente · sin anuncios</small></div></aside>
+<section class="related"><h2>Guías relacionadas</h2><ul class="guides"><li><a href="/md-reader-site/es/guides/what-is-md-file/">Qué es un archivo .md y cómo abrirlo en tu móvil Android</a><span>Un archivo .md es un documento Markdown de texto plano con formato sencillo. Descubre qué es y cómo leerlo en tu Android.</span></li><li><a href="/md-reader-site/es/guides/open-md-file-android/">Cómo abrir un archivo .md en Android</a><span>Android no tiene un visor de markdown integrado. Aprende a abrir archivos .md desde Archivos, Descargas, Drive o correo.</span></li><li><a href="/md-reader-site/es/guides/markdown-tables-on-phone/">Cómo leer tablas de Markdown en el móvil con MD Reader</a><span>Las tablas anchas se rompen en pantallas pequeñas. Aprende a leerlas con desplazamiento horizontal en Android desde archivos o IA.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader es un visor y editor de Markdown sin conexión para Android.</p>
+  <p><a href="/md-reader-site/es/guides/">Todas las guías</a> · <a href="/md-reader-site/privacy/">Política de privacidad</a> · Contacto: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Idioma"><a href="/md-reader-site/guides/md-file-shows-symbols/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/md-file-shows-symbols/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/md-file-shows-symbols/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/md-file-shows-symbols/" hreflang="es" aria-current="true">Español</a><a href="/md-reader-site/pt/guides/md-file-shows-symbols/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>
