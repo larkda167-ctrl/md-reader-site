@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマホでMarkdownのコードを読む・ワンタップでコピーする方法 · MD Reader</title>
+<meta name="description" content="Androidで.mdファイルやAIの回答に含まれるコードブロックを快適に閲覧。シンタックスハイライト、横スクロールによるインデント保持、ワンタップのコードコピーに対応したMD Readerで、長いコマンドや設定ファイルも崩れずきれいに表示できます。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-code-blocks-on-phone/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/markdown-code-blocks-on-phone/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-code-blocks-on-phone/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="スマホでMarkdownのコードを読む・ワンタップでコピーする方法 · MD Reader">
+<meta property="og:description" content="Androidで.mdファイルやAIの回答に含まれるコードブロックを快適に閲覧。シンタックスハイライト、横スクロールによるインデント保持、ワンタップのコードコピーに対応したMD Readerで、長いコマンドや設定ファイルも崩れずきれいに表示できます。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-code-blocks-on-phone/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマホでMarkdownのコードを読む・ワンタップでコピーする方法", "description": "Androidで.mdファイルやAIの回答に含まれるコードブロックを快適に閲覧。シンタックスハイライト、横スクロールによるインデント保持、ワンタップのコードコピーに対応したMD Readerで、長いコマンドや設定ファイルも崩れずきれいに表示できます。", "inLanguage": "ja", "datePublished": "2026-11-09", "dateModified": "2026-11-09", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-code-blocks-on-phone/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>スマホでMarkdownのコードを読む・ワンタップでコピーする方法</h1>
+<p class="meta">更新日: <time datetime="2026-11-09">2026-11-09</time></p>
+<p>Markdownでは、コードは3つのバッククォートで囲んで記述します。</p>
+<pre><code class="language-markdown">```python
+def greet(name):
+    return f&quot;Hello, {name}!&quot;
+```
+</code></pre>
+<p>スマホの一般的なテキストアプリでは、コードの表示が崩れやすくなります。画面端で勝手に改行されてインデントが乱れ（PythonやYAMLでは特に問題になります）、ハイライトも付かず、コピーしたい範囲だけを指先で選択するのも困難です。</p>
+<h2>スマホのコードビューアに求められる機能</h2>
+<ul>
+<li><strong>自動改行しないこと。</strong> 長い行も横スクロールできるため、インデントが崩れません。</li>
+<li><strong>シンタックスハイライト。</strong> コードブロックに指定された言語（<code>python</code>、<code>js</code>、<code>bash</code> など）に応じて見やすく色分けされます。</li>
+<li><strong>専用のコピーボタン。</strong> 余計な空白やバッククォートを含めず、コードの中身だけを正確にコピーできます。</li>
+<li><strong>等幅フォント。</strong> 桁位置が崩れず綺麗に並びます。</li>
+</ul>
+<h2>MD Reader のコードブロック表示</h2>
+<p>MD Reader では、バッククォートで囲まれたコードブロックがシンタックスハイライト付きで表示され、横スクロールに対応し、ヘッダーに<strong>コピー</strong>ボタンが配置されます。</p>
+<ol>
+<li><code>.md</code> ファイルや README を開くか、<strong>クリップボードから貼り付け</strong>でAIの回答を取り込みます。</li>
+<li>長いコード行は左右にスワイプして確認できます。</li>
+<li>コードブロック上の<strong>コピー</strong>をタップします。</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmarkdown-code-blocks-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<h2>よくある活用例</h2>
+<ul>
+<li><strong>README のインストールコマンド。</strong> コピーして Termux などの端末エミュレータに貼り付けたり、PCに転送したりできます。<a href="../readme-md-viewer-android/">AndroidでREADME.mdを読む方法</a>もご覧ください。</li>
+<li><strong>AIの回答に含まれるコード。</strong> ChatGPT や Claude はコードをコードブロックで出力します。MD Reader に貼り付ければ整形された状態で読め、必要なコードだけをワンタップでコピーできます。<a href="../view-chatgpt-markdown-on-phone/">ChatGPTの回答をスマホできれいに読む方法</a>も参照してください。</li>
+<li><strong>設定ファイル。</strong> インデントの正確さが求められる YAML や JSON の確認に役立ちます。</li>
+<li><strong>差分（Diff）。</strong> <code>diff</code> ブロックでは追加行と削除行が分かりやすく色分けされます。</li>
+</ul>
+<h2>ヒント</h2>
+<ul>
+<li>コードに色が付かない場合、コードブロックの先頭に言語名が抜けている可能性があります。<code>```python</code> のように記述するとハイライトされますが、言語名のない <code>```</code> では色分けされません。</li>
+<li>長い行が多いときは、スマホを横向きにするか、<strong>表示設定</strong>で<strong>本文の幅 → 広い</strong>に設定すると快適です。<a href="../comfortable-reading-settings/">快適に読むための表示設定</a>をご覧ください。</li>
+<li><code>mermaid</code> ブロックはコードではなく図として描画されます。詳しくは<a href="../mermaid-diagrams-android/">AndroidでMermaidの作図を表示する</a>をご覧ください。</li>
+</ul>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmarkdown-code-blocks-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは近日公開 · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/readme-md-viewer-android/">Android で README.md を読む方法</a><span>Android スマホで README.md ファイルを開く方法。見出し、テーブル、コードブロックのハイライト付きで快適に読めます。</span></li><li><a href="/md-reader-site/ja/guides/view-chatgpt-markdown-on-phone/">ChatGPT の回答をスマホで綺麗に読む方法</a><span>ChatGPT の長い回答をコピーして崩れていませんか？Android の Markdown ビューアーに貼り付ければ、見出しや表、コードが綺麗に復活します。</span></li><li><a href="/md-reader-site/ja/guides/mermaid-diagrams-android/">Android で Mermaid の図を表示する方法</a><span>Markdown 内の Mermaid の図を、Android でオフラインで綺麗に表示する方法をご紹介します。フローチャートやシーケンス図も対応。</span></li><li><a href="/md-reader-site/ja/guides/comfortable-reading-settings/">Android での Markdown のダークモードと文字サイズ</a><span>長文の .md 文書を読みやすくします。OLED ブラックを含むテーマ、文字サイズ、本文の幅、セリフフォントを設定可能です。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/markdown-code-blocks-on-phone/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/markdown-code-blocks-on-phone/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/markdown-code-blocks-on-phone/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/markdown-code-blocks-on-phone/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/markdown-code-blocks-on-phone/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

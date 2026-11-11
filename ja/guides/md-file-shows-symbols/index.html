@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown ファイルで # や ** が消えない理由と対策 · MD Reader</title>
+<meta name="description" content="Android で .md ファイルを開いたときに # や ** がそのまま表示されてしまう理由と、きれいにフォーマットして閲覧する方法を解説します。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/md-file-shows-symbols/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/md-file-shows-symbols/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/md-file-shows-symbols/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown ファイルで # や ** が消えない理由と対策 · MD Reader">
+<meta property="og:description" content="Android で .md ファイルを開いたときに # や ** がそのまま表示されてしまう理由と、きれいにフォーマットして閲覧する方法を解説します。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/md-file-shows-symbols/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Markdown ファイルで # や ** が消えない理由と対策", "description": "Android で .md ファイルを開いたときに # や ** がそのまま表示されてしまう理由と、きれいにフォーマットして閲覧する方法を解説します。", "inLanguage": "ja", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/md-file-shows-symbols/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>Markdown ファイルで # や ** が消えない理由と対策</h1>
+<p class="meta">更新日: <time datetime="2026-11-04">2026-11-04</time></p>
+<p>.md ファイルを開いたときに、次のような表示になることがあります。</p>
+<pre><code class="language-text">## Meeting notes
+**Decision:** ship on *Friday*
+| Owner | Task |
+|---|---|
+| Sam | Release |
+</code></pre>
+<p>ファイルが壊れているわけではありません。<strong>プレーンテキスト</strong>を表示するアプリで開いているため、装飾の代わりに Markdown の記号がそのまま見えている状態です。</p>
+<h2>記号の意味</h2>
+<table>
+<thead>
+<tr>
+<th>表示される記号</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Title</code>, <code>## Section</code></td>
+<td>見出し</td>
+</tr>
+<tr>
+<td><code>**text**</code></td>
+<td>太字</td>
+</tr>
+<tr>
+<td><code>*text*</code> or <code>_text_</code></td>
+<td>斜体</td>
+</tr>
+<tr>
+<td><code>- item</code></td>
+<td>箇条書きリスト</td>
+</tr>
+<tr>
+<td><code>- [ ] task</code></td>
+<td>チェックリスト</td>
+</tr>
+<tr>
+<td><code>[text](https://…)</code></td>
+<td>リンク</td>
+</tr>
+<tr>
+<td><code>| a | b |</code> の行</td>
+<td>テーブル</td>
+</tr>
+<tr>
+<td><code>```</code> で囲まれた行</td>
+<td>コードブロック</td>
+</tr>
+<tr>
+<td><code>$x^2$</code></td>
+<td>数式</td>
+</tr>
+</tbody>
+</table>
+<h2>解決方法：Markdown ビューアーで開く</h2>
+<p>Markdown ビューアーは、記号を読み取って実際の見出し、太字、テーブル、タップ可能なチェックリストとしてきれいに表示します。</p>
+<ol>
+<li>Google Play から <strong>MD Reader</strong> をインストールします。</li>
+<li>ファイルを再度開き、MD Reader を選択します。スマートフォンが常にテキストアプリで開いてしまう場合は、下記の手順を確認してください。</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmd-file-shows-symbols" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<h2>ファイルがいつも間違ったアプリで開いてしまう場合</h2>
+<p>Android は「常にこのアプリを使う」で選択したアプリを記憶します。これを変更するには、次の手順を行います。</p>
+<ol>
+<li><strong>設定</strong> → <strong>アプリ</strong> に移動し、現在 <code>.md</code> ファイルを開いているアプリ（テキストエディターやブラウザなど）を見つけます。</li>
+<li><strong>デフォルトで開く</strong>（または <strong>初期設定で開く</strong>）→ <strong>デフォルト設定を削除</strong> をタップします。</li>
+<li>もう一度 <code>.md</code> ファイルをタップします。Android がどのアプリを使用するか尋ねるので、MD Reader を選択します。</li>
+</ol>
+<p>メニュー名はスマートフォンメーカーによって多少異なります。この設定を行わなくても、MD Reader 内から <strong>ファイルを開く</strong> を使ってファイルを開くことができます。</p>
+<h2>ファイルではなく AI アプリのテキストの場合</h2>
+<p>ChatGPT や Claude から回答をコピーして記号が表示される場所に貼り付けてしまった場合は、代わりに <strong>クリップボードから貼り付け</strong> を使って MD Reader に貼り付けてください。<a href="../view-chatgpt-markdown-on-phone/">ChatGPT の回答をスマホで整形して読む</a>をご覧ください。</p>
+<h2>記号なしで編集したい場合</h2>
+<p>ドキュメントを変更するために Markdown を覚える必要はありません。MD Reader では、<strong>編集</strong> をタップして、フォーマットされたページ上で直接入力できます。記号は自動的に処理されます。<a href="../edit-markdown-without-syntax/">構文を使わずに Markdown を編集する</a>をご覧ください。</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dmd-file-shows-symbols" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは近日公開 · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/what-is-md-file/">.md ファイルとは？ Android スマホで開く方法</a><span>.md ファイルはシンプルな書式設定のプレーンテキストです。その意味と Android で読む方法を解説します。</span></li><li><a href="/md-reader-site/ja/guides/open-md-file-android/">Android で .md ファイルを開く方法</a><span>Android で .md ファイルを開く方法を解説。ファイルやダウンロード、Google Drive から綺麗にフォーマットされた状態で読む手順をご紹介します。</span></li><li><a href="/md-reader-site/ja/guides/edit-markdown-without-syntax/">Markdown の書き方を知わずにファイルを編集する方法</a><span>Android で普通の説明文書のように .md ファイルを編集できます。装飾されたページに直接入力すると、自動で Markdown の記号に変換されます。</span></li><li><a href="/md-reader-site/ja/guides/markdown-tables-on-phone/">スマホで Markdown の表を綺麗に読む方法</a><span>スマホで Markdown の表が崩れるお悩み解決。横スクロールやレイアウト調整で、長くて大きな表も Android で快適に読むコツをご紹介します。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/md-file-shows-symbols/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/md-file-shows-symbols/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/md-file-shows-symbols/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/md-file-shows-symbols/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/md-file-shows-symbols/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

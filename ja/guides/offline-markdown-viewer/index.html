@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android向け完全オフラインMarkdownビューア：インターネット権限なしが重要な理由 · MD Reader</title>
+<meta name="description" content="日記や業務メモ、AIの回答など、Markdown文書には機密情報が多く含まれます。アプリがファイルを外部送信できないか確認する方法と、インターネット通信の権限を一切持たない完全オフラインのMarkdownビューアの重要性について解説します。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/offline-markdown-viewer/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/offline-markdown-viewer/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/offline-markdown-viewer/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android向け完全オフラインMarkdownビューア：インターネット権限なしが重要な理由 · MD Reader">
+<meta property="og:description" content="日記や業務メモ、AIの回答など、Markdown文書には機密情報が多く含まれます。アプリがファイルを外部送信できないか確認する方法と、インターネット通信の権限を一切持たない完全オフラインのMarkdownビューアの重要性について解説します。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/offline-markdown-viewer/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Android向け完全オフラインMarkdownビューア：インターネット権限なしが重要な理由", "description": "日記や業務メモ、AIの回答など、Markdown文書には機密情報が多く含まれます。アプリがファイルを外部送信できないか確認する方法と、インターネット通信の権限を一切持たない完全オフラインのMarkdownビューアの重要性について解説します。", "inLanguage": "ja", "datePublished": "2026-11-08", "dateModified": "2026-11-08", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/offline-markdown-viewer/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>Android向け完全オフラインMarkdownビューア：インターネット権限なしが重要な理由</h1>
+<p class="meta">更新日: <time datetime="2026-11-08">2026-11-08</time></p>
+<p>Markdownファイルには、日記や仕事のメモ、議事録、健康の記録、AIとの個人的なやり取りなど、他人に見せたくない情報が多く含まれています。ビューアアプリでファイルを開く前に、ひとつ確認しておきたい点があります。それは、<strong>「このアプリはファイルを外部に送信できるか？」</strong>ということです。</p>
+<h2>最も簡単な確認方法：インターネット権限</h2>
+<p>Androidでは、アプリが外部サーバーと通信するために<strong>インターネット権限</strong>（ネットワークへのフルアクセス）が必要です。この権限がなければ、ファイルはもちろん、利用状況の分析データや広告データすら物理的に送信できません。</p>
+<p>アプリの権限を確認する方法：</p>
+<ol>
+<li>Google Playのアプリページで<strong>「このアプリについて」</strong>を開き、<strong>「アプリの権限」</strong>（または<strong>「詳細」</strong>）を確認します。</li>
+<li>または、スマートフォンの<strong>設定 → アプリ → [確認したいアプリ] → 権限 → すべての権限</strong>を開きます（端末により項目名が多少異なります）。</li>
+<li><strong>「ネットワークへの完全なアクセス」</strong>があるか確認します。この項目がなければ、アプリはインターネット通信を一切行えません。</li>
+</ol>
+<p>あわせて、Google Playの<strong>「データの安全性」</strong>セクションも確認してください。開発者が開示しているデータの収集・共有状況が記載されています。</p>
+<h2>真の「オフライン」が意味するもの</h2>
+<p>真にオフラインなMarkdownビューアには、以下の条件が求められます。</p>
+<ul>
+<li>ネットワークアクセス権限を一切要求しない</li>
+<li>広告が表示されない（広告表示にはインターネット接続が必要です）</li>
+<li>アナリティクスやクラッシュ解析のSDKを含まない</li>
+<li>アカウント登録やログインが不要</li>
+<li>数式や作図などの表示コードがすべてアプリ本体に内蔵されており、外部から読み込まない</li>
+</ul>
+<h2>MD Reader の設計思想</h2>
+<p>MD Reader はインターネット権限を要求しません。広告やトラッカー、アクセス解析ツールは一切含まれておらず、ログインも不要です。数式（KaTeX）やダイアグラム（Mermaid）の表示ライブラリもアプリ内に同梱されているため、機内モードや電波の届かない場所でも普段どおりにレンダリングされます。</p>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Doffline-markdown-viewer" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<p>なお、通信を行わないことによる制限として、ウェブ上のURLを指定した画像はダウンロードできないため表示されません。一方で、テキスト、表、コードブロック、数式、ダイアグラムなどはすべて完全に動作します。</p>
+<p>収集するデータが何もないため、<a href="/md-reader-site/privacy/">プライバシーポリシー</a>の内容も非常にシンプルです。</p>
+<h2>リンクをタップしたときはどうなる？</h2>
+<p>文書内のリンクをタップすると、普段お使いのウェブブラウザなどの外部アプリで開かれます。その場合の通信はリンク先のアプリ側で行われるものであり、MD Reader は単にURLをそのアプリに引き渡しているだけです。</p>
+<h2>プライベートなメモを守るための習慣</h2>
+<ul>
+<li>機密情報を含むメモは、共有フォルダではなく端末のローカルストレージに保存する</li>
+<li>オンラインの変換サービスを使わず、端末内で直接PDF化する。詳しくは <a href="/md-reader-site/guides/markdown-to-pdf-android/">AndroidでMarkdownをPDFに変換する方法</a> をご覧ください。</li>
+<li>アプリの大規模アップデート時には、要求される権限に変更がないか再確認する</li>
+</ul>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Doffline-markdown-viewer" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは近日公開 · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/open-md-file-android/">Android で .md ファイルを開く方法</a><span>Android で .md ファイルを開く方法を解説。ファイルやダウンロード、Google Drive から綺麗にフォーマットされた状態で読む手順をご紹介します。</span></li><li><a href="/md-reader-site/ja/guides/save-ai-answers-as-markdown/">Android で AI チャットの回答を Markdown ファイルとして保存する方法</a><span>ChatGPT、Claude、Gemini の回答をスマホに .md ファイルとして保存。綺麗に整形され検索しやすいノートとして管理できます。</span></li><li><a href="/md-reader-site/ja/guides/what-is-md-file/">.md ファイルとは？ Android スマホで開く方法</a><span>.md ファイルはシンプルな書式設定のプレーンテキストです。その意味と Android で読む方法を解説します。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/offline-markdown-viewer/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/offline-markdown-viewer/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/offline-markdown-viewer/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/offline-markdown-viewer/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/offline-markdown-viewer/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>
