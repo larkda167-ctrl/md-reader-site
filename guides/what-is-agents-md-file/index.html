@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is an AGENTS.md file? What it does and what goes in it · MD Reader</title>
+<meta name="description" content="AGENTS.md is a plain text file of instructions that AI coding agents such as Codex read before working on a project. Here&#x27;s what goes in it and where.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is an AGENTS.md file? What it does and what goes in it · MD Reader">
+<meta property="og:description" content="AGENTS.md is a plain text file of instructions that AI coding agents such as Codex read before working on a project. Here&#x27;s what goes in it and where.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What is an AGENTS.md file? What it does and what goes in it", "description": "AGENTS.md is a plain text file of instructions that AI coding agents such as Codex read before working on a project. Here's what goes in it and where.", "inLanguage": "en", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>What is an AGENTS.md file? What it does and what goes in it</h1>
+<p class="meta">Updated: <time datetime="2026-11-23">2026-11-23</time></p>
+<p>An <code>AGENTS.md</code> file is a plain text file of instructions for AI coding agents, the tools that write and change code for you, such as Codex. The agent reads it before it starts working, so it already knows how to build the project, how to test it and which rules to follow.</p>
+<p>It's written in markdown, a simple way of formatting text with symbols like <code>#</code> and <code>**</code>. The file doesn't run anything by itself, so opening it to read it is safe. Editing it is different: the agent will act on what you change.</p>
+<h2>What goes in it</h2>
+<p>The <a href="https://agents.md/">AGENTS.md site</a> describes the file as a README for agents. A <code>README.md</code> is written for people: what the project is and how to get started. <code>AGENTS.md</code> holds the extra detail an agent needs, which would only clutter the README.</p>
+<p>There are no required fields. It's ordinary markdown and you can use any headings you like. The site suggests covering things such as:</p>
+<ul>
+<li><strong>Project overview:</strong> what the project is, in a few lines</li>
+<li><strong>Build and test commands:</strong> so the agent can check its own work</li>
+<li><strong>Code style:</strong> the conventions your project follows</li>
+<li><strong>Testing instructions:</strong> what must pass before the work counts as done</li>
+<li><strong>Security considerations:</strong> anything the agent must handle carefully</li>
+</ul>
+<p>Commit and pull request rules or deployment steps can go in too. A small one looks like this:</p>
+<pre><code class="language-markdown"># AGENTS.md
+
+## Commands
+- Install: npm install
+- Test: npm test (run this before you finish)
+
+## Code style
+- Keep user-facing text in src/i18n
+
+## Don't touch
+- Files in /generated are created by a script
+</code></pre>
+<h2>Where it goes</h2>
+<p>Put the file in the top folder of the project. That's enough for most projects.</p>
+<p>A large project made of several separate parts can have one <code>AGENTS.md</code> inside each part. According to the AGENTS.md site, agents read the nearest file in the folder tree, so the closest one wins:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AGENTS.md</code> in the top folder</td>
+<td>Instructions for the whole project</td>
+</tr>
+<tr>
+<td><code>AGENTS.md</code> in a subfolder</td>
+<td>Instructions for work inside that folder. It takes precedence there</td>
+</tr>
+</tbody>
+</table>
+<p>What you type to the agent in the chat comes before both. An explicit request from you overrides the file.</p>
+<h2>Which tools read it</h2>
+<p><code>AGENTS.md</code> isn't tied to one product. It's an open format, now looked after by the Agentic AI Foundation under the Linux Foundation, and it grew out of work by several teams including OpenAI's Codex, Google's Jules, Cursor, Amp and Factory.</p>
+<p>The AGENTS.md site lists more than twenty tools that use it, among them Codex, Cursor, Gemini CLI, GitHub Copilot's coding agent, Aider, Zed, Windsurf and VS Code. That's the point of the format: you write your project's rules once instead of keeping a separate file for every tool. Each tool has its own details, so check its documentation if a file doesn't seem to be picked up.</p>
+<h2>AGENTS.md and CLAUDE.md</h2>
+<p><code>CLAUDE.md</code> does the same job for Claude Code, Anthropic's coding agent. If you see both in a project, they are two sets of standing instructions for different tools, and it's worth checking that they don't contradict each other. Our guide to <a href="../what-is-claude-md-file/">what a CLAUDE.md file is</a> covers that one, and <a href="../claude-code-codex-md-files/">the .md files coding agents create</a> explains the others you may find next to it.</p>
+<h2>What to keep in mind</h2>
+<p>Don't put passwords or API keys in the file. It usually lives in the project alongside the code, so anyone who can see the project can read it.</p>
+<p>Keep it current. The agent trusts what's written there, so an outdated test command or a rule you no longer follow sends it in the wrong direction. When you notice yourself correcting the same mistake twice, add a line.</p>
+<h2>Reading it on your phone</h2>
+<p>Opened in a plain text app, the file shows raw <code>#</code> and <code>**</code> symbols. To read it formatted on Android:</p>
+<ol>
+<li>Send it to your phone. Coding agents usually run on a computer, so use Google Drive, an email attachment or a USB cable.</li>
+<li>Tap the file and choose <strong>MD Reader</strong>, or use <strong>Open file</strong> in the app.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dwhat-is-agents-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<p>Headings, tables and code blocks appear formatted, and <strong>Contents</strong> lets you jump between sections. Tags like <code>&lt;example&gt;</code>, which are common in instruction files, are shown as written instead of disappearing. For Drive, see <a href="../open-md-from-google-drive/">how to open .md files from Google Drive</a>.</p>
+<p>MD Reader doesn't connect to Codex or any other coding tool and doesn't sync with your computer, so what you're reading is a copy. Send it again after it changes. You can tap <strong>Edit</strong> and change the copy, but the agent won't see that until you send the file back to your computer.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dwhat-is-agents-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · Pro one-time purchase · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/what-is-claude-md-file/">What is a CLAUDE.md file? What it does and what to put in it</a><span>CLAUDE.md is a text file of standing instructions that Claude Code reads at the start of every session. Here&#x27;s what goes in it and whether you need one.</span></li><li><a href="/md-reader-site/guides/claude-code-codex-md-files/">What are the .md files Claude Code and Codex create?</a><span>Ask Claude Code or Codex to do something and .md files pile up in your project. Here&#x27;s what they are, which ones matter, and how to read them on your phone.</span></li><li><a href="/md-reader-site/guides/open-md-from-google-drive/">How to open .md files from Google Drive on Android</a><span>Google Drive shows .md files as plain text or can&#x27;t preview them. Here&#x27;s how to open them formatted in a markdown viewer on Android.</span></li><li><a href="/md-reader-site/guides/edit-markdown-without-syntax/">How to edit a markdown file without learning markdown</a><span>Edit .md files on Android like a normal document. Type on the formatted page and the markdown symbols are written for you.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/what-is-agents-md-file/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/what-is-agents-md-file/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/what-is-agents-md-file/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/what-is-agents-md-file/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/what-is-agents-md-file/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

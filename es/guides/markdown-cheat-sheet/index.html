@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoja de trucos de Markdown: sintaxis básica y ejemplos · MD Reader</title>
+<meta name="description" content="Breve guía de referencia de Markdown con ejemplos copiables para encabezados, negrita, listas, listas de tareas, enlaces, código y más.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-cheat-sheet/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-cheat-sheet/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/markdown-cheat-sheet/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/markdown-cheat-sheet/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-cheat-sheet/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/markdown-cheat-sheet/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/markdown-cheat-sheet/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hoja de trucos de Markdown: sintaxis básica y ejemplos · MD Reader">
+<meta property="og:description" content="Breve guía de referencia de Markdown con ejemplos copiables para encabezados, negrita, listas, listas de tareas, enlaces, código y más.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-cheat-sheet/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Hoja de trucos de Markdown: sintaxis básica y ejemplos", "description": "Breve guía de referencia de Markdown con ejemplos copiables para encabezados, negrita, listas, listas de tareas, enlaces, código y más.", "inLanguage": "es", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/es/guides/markdown-cheat-sheet/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/es/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/es/guides/">Guías</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/es/">Inicio</a> › <a href="/md-reader-site/es/guides/">Guías</a></nav>
+<article class="doc">
+<h1>Hoja de trucos de Markdown: sintaxis básica y ejemplos</h1>
+<p class="meta">Actualizado: <time datetime="2026-11-27">2026-11-27</time></p>
+<p>Markdown usa unos pocos caracteres comunes para dar formato al texto: <code>#</code> para los encabezados, <code>**</code> para la negrita, <code>-</code> para las listas y <code>|</code> para las tablas. Esta hoja de trucos muestra cada uno con un ejemplo que puedes copiar, siguiendo GitHub Flavored Markdown (GFM), la versión ampliamente utilizada que documenta GitHub.</p>
+<p>Si nunca antes has usado Markdown, <a href="../what-is-md-file/">qué es un archivo .md</a> explica de dónde viene. Todo lo que aparece a continuación es texto sin formato, por lo que puedes escribirlo en cualquier aplicación de notas.</p>
+<h2>Encabezados y párrafos</h2>
+<p>Comienza una línea con de uno a seis signos <code>#</code> y luego un espacio. Un <code>#</code> es el encabezado más grande y seis es el más pequeño.</p>
+<pre><code class="language-markdown"># Plan de viaje
+## Día uno
+### Mañana
+</code></pre>
+<p>Una línea en blanco entre dos bloques de texto inicia un nuevo párrafo. Presionar Intro una vez normalmente no lo hace: en un archivo <code>.md</code> las dos líneas se unen. Para forzar un salto de línea, termina la línea con dos espacios o una barra invertida (<code>\</code>).</p>
+<h2>Negrita, cursiva y tachado</h2>
+<pre><code class="language-markdown">**negrita**  *cursiva*  ***negrita y cursiva***  ~~tachado~~
+</code></pre>
+<p>Los guiones bajos también sirven para dar énfasis: <code>__negrita__</code> y <code>_italic_</code>. Elige un estilo y mantén lo mismo para que el archivo sea fácil de leer como texto plano.</p>
+<h2>Listas y listas de tareas</h2>
+<p>Usa <code>-</code>, <code>*</code> o <code>+</code> para una lista con viñetas, y números con un punto para una lista numerada. Para poner una lista dentro de otra, indenta el elemento interno para que se alinee con el texto superior.</p>
+<pre><code class="language-markdown">- Pan
+- Fruta
+  - Manzanas
+  - Peras
+
+1. Reservar el tren
+2. Hacer la maleta
+</code></pre>
+<p>Una lista de tareas (también llamada checklist) es una lista con viñetas que incluye una casilla entre corchetes. Deja un espacio dentro si no está hecha y pon una <code>x</code> si está lista.</p>
+<pre><code class="language-markdown">- [ ] Llamar al banco
+- [x] Pagar el alquiler
+</code></pre>
+<h2>Enlaces e imágenes</h2>
+<p>Un enlace es el texto entre corchetes seguido de la dirección entre paréntesis. Una imagen es lo mismo pero con un <code>!</code> delante, y el texto entre corchetes describe la imagen para personas que no pueden verla.</p>
+<pre><code class="language-markdown">[Leer la guía](https://example.com/guide)
+![Un mapa de la ruta](route.png)
+</code></pre>
+<h2>Código</h2>
+<p>Envuelve una línea corta de código o el nombre de un archivo entre comillas invertidas simples: <code>`notes.md`</code>. Para un bloque más largo, coloca tres comillas invertidas en la línea anterior y en la posterior. Añadir el nombre del lenguaje tras las tres primeras comillas permite a las apps colorear el código (resaltado de sintaxis).</p>
+<pre><code class="language-markdown">```python
+print(&quot;hola&quot;)
+```
+</code></pre>
+<h2>Tablas</h2>
+<p>Separa las columnas con <code>|</code>. La segunda línea, hecha de guiones, separa la cabecera del resto, y los dos puntos definen la alineación: <code>:---</code> izquierda, <code>:---:</code> centrado, <code>---:</code> derecha. Deja una línea en blanco antes de la tabla.</p>
+<pre><code class="language-markdown">| Artículo | Precio |
+| :---     | ---:   |
+| Café     | 3.50   |
+| Pastel   | 4.00   |
+</code></pre>
+<p>Las columnas no tienen que alinearse en el código fuente. Si una celda necesita un carácter <code>|</code> real, escríbelo como <code>\|</code>.</p>
+<h2>Citas, notas de aviso y notas al pie</h2>
+<p>Empieza una línea con <code>&gt;</code> para citarla. Un cuadro de aviso o callout es una caja resaltada a partir de una cita cuya primera línea indica su tipo. GitHub admite cinco tipos: <code>NOTE</code>, <code>TIP</code>, <code>IMPORTANT</code>, <code>WARNING</code> y <code>CAUTION</code>.</p>
+<pre><code class="language-markdown">&gt; [!WARNING]
+&gt; Haz una copia de seguridad del archivo antes de editarlo.
+</code></pre>
+<p>Una nota al pie tiene dos partes: un marcador en el texto y la nota en sí, que puede ir en cualquier parte del archivo. Se muestra al final.</p>
+<pre><code class="language-markdown">El museo abre a las nueve.[^1]
+
+[^1]: Cerrado los lunes.
+</code></pre>
+<h2>Comprobar lo que has escrito en el móvil</h2>
+<p>La forma más rápida de aprender la sintaxis es verla con formato. Si abres un archivo <code>.md</code> en Android y ves símbolos <code>#</code> y <code>**</code> en bruto, la app está mostrando el texto plano y no el formato (<a href="../md-file-shows-symbols/">por qué pasa esto</a>).</p>
+<p><strong>MD Reader</strong> muestra todo lo de esta página con formato y gratis: tablas con desplazamiento lateral, listas de tareas que puedes marcar, bloques de código con resaltado y botón de copiar, avisos como <code>&gt; [!NOTE]</code> y notas al pie. Toca <strong>Pegar del portapapeles</strong> para probar cualquier ejemplo de esta página o abre tu propio archivo.</p>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dmarkdown-cheat-sheet" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a></p>
+<p>Ni siquiera necesitas recordar los símbolos. Toca <strong>Editar</strong> y escribe directamente en la página con formato; escribe <code>/</code> para añadir un encabezado, lista, lista de tareas, cita, divisor, bloque de código o tabla. <strong>Editar el código Markdown</strong> cambia al texto plano cuando quieras ver los símbolos. Más información en <a href="../edit-markdown-without-syntax/">cómo editar markdown sin usar la sintaxis</a>.</p>
+<p>Algo a tener en cuenta: MD Reader no tiene permiso de internet, por lo que las imágenes que apuntan a una dirección web no se cargan. El texto, las tablas y el código no se ven afectados.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Prueba MD Reader</strong><p>Un visor y editor de Markdown gratis para Android. Sin cuenta, sin anuncios y sin permiso de internet.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=es&amp;referrer=utm_source%3Dsite%26utm_medium%3Des%26utm_campaign%3Dmarkdown-cheat-sheet" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponible en Google Play</span></a><small>Gratis · Pro con pago único · sin anuncios</small></div></aside>
+<section class="related"><h2>Guías relacionadas</h2><ul class="guides"><li><a href="/md-reader-site/es/guides/what-is-md-file/">Qué es un archivo .md y cómo abrirlo en tu móvil Android</a><span>Un archivo .md es un documento Markdown de texto plano con formato sencillo. Descubre qué es y cómo leerlo en tu Android.</span></li><li><a href="/md-reader-site/es/guides/edit-markdown-without-syntax/">Cómo editar un archivo Markdown sin saber Markdown</a><span>Edita archivos .md en Android como un documento normal. Escribe sobre la página con formato y la app se encargará de los símbolos Markdown.</span></li><li><a href="/md-reader-site/es/guides/md-file-shows-symbols/">Por qué tu archivo .md muestra # y ** (y cómo solucionarlo)</a><span>Si un archivo markdown se abre lleno de #, ** y |, se muestra como texto plano. Descubre cómo verlo con formato en Android.</span></li><li><a href="/md-reader-site/es/guides/markdown-tables-on-phone/">Cómo leer tablas de Markdown en el móvil con MD Reader</a><span>Las tablas anchas se rompen en pantallas pequeñas. Aprende a leerlas con desplazamiento horizontal en Android desde archivos o IA.</span></li><li><a href="/md-reader-site/es/guides/markdown-checklist-android/">Cómo usar checklists de Markdown en Android</a><span>Marca tareas - [ ] en archivos .md desde tu móvil. Toca una casilla y se guardará al instante en el archivo, sin necesidad de entrar al modo de edición.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader es un visor y editor de Markdown sin conexión para Android.</p>
+  <p><a href="/md-reader-site/es/guides/">Todas las guías</a> · <a href="/md-reader-site/privacy/">Política de privacidad</a> · Contacto: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Idioma"><a href="/md-reader-site/guides/markdown-cheat-sheet/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/markdown-cheat-sheet/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/markdown-cheat-sheet/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/markdown-cheat-sheet/" hreflang="es" aria-current="true">Español</a><a href="/md-reader-site/pt/guides/markdown-cheat-sheet/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

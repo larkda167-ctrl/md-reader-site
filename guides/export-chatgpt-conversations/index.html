@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to export ChatGPT conversations and read them as markdown · MD Reader</title>
+<meta name="description" content="ChatGPT&#x27;s data export gives you a ZIP of JSON files, not markdown. Here&#x27;s how to request it and turn your chats into readable documents on Android.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to export ChatGPT conversations and read them as markdown · MD Reader">
+<meta property="og:description" content="ChatGPT&#x27;s data export gives you a ZIP of JSON files, not markdown. Here&#x27;s how to request it and turn your chats into readable documents on Android.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to export ChatGPT conversations and read them as markdown", "description": "ChatGPT's data export gives you a ZIP of JSON files, not markdown. Here's how to request it and turn your chats into readable documents on Android.", "inLanguage": "en", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>How to export ChatGPT conversations and read them as markdown</h1>
+<p class="meta">Updated: <time datetime="2026-11-25">2026-11-25</time></p>
+<p>ChatGPT can export your whole chat history, but it doesn't give you markdown files. You get a ZIP file with your conversations in JSON (a data format meant for programs) plus a small viewer page, so to read them as formatted documents you either use that viewer or import the ZIP into an app that converts each chat for you.</p>
+<p>This guide covers both, plus the quick free way to keep a single answer as a <code>.md</code> file.</p>
+<h2>What the export contains</h2>
+<p>According to OpenAI's help center, the downloaded ZIP holds:</p>
+<ul>
+<li><code>index.html</code>, an export viewer that opens in a web browser and lets you search your conversations</li>
+<li>your conversations as JSON files, plus other account data that may be in CSV or other formats</li>
+<li>in older exports, a <code>chat.html</code> file instead of the viewer</li>
+</ul>
+<p>There's no folder of <code>.md</code> files. The text of each answer is inside the JSON, with its markdown symbols (<code>#</code>, <code>**</code>, <code>|</code>) still in it. Opening the JSON in a text app shows a wall of brackets and quotes, which is why the export looks unreadable at first.</p>
+<h2>How to request the export</h2>
+<p>On the web: sign in, open your profile menu, then <strong>Settings</strong> → <strong>Data controls</strong> → under <strong>Export data</strong>, select <strong>Export</strong>, and confirm.</p>
+<p>On Android: in the ChatGPT app, open <strong>Settings</strong> from your profile menu → <strong>Data controls</strong> → <strong>Export Data</strong>, and confirm. If the app sends you to the web instead, finish the steps there.</p>
+<p>A few things OpenAI points out:</p>
+<ul>
+<li>You get an email (or SMS) with a <strong>Download data export</strong> link. It can take up to 7 days to arrive.</li>
+<li>The link expires 24 hours after you receive it, and you need to be signed in to the same account.</li>
+<li>If the link won't open on your phone, try it on a computer.</li>
+<li>Self-service export isn't available in Business, Enterprise or ChatGPT for Healthcare workspaces.</li>
+<li>An export can't bring back chats you already deleted.</li>
+</ul>
+<p>The file contains your full history, so keep it somewhere private.</p>
+<h2>Reading it with the built-in viewer</h2>
+<p>The simplest option is the viewer OpenAI includes. Extract the ZIP, open <code>index.html</code> in your browser, select <strong>Choose folder</strong> and pick the extracted folder. It works locally in the browser and doesn't upload your files. This is easiest on a computer, where extracting a ZIP and choosing a folder is routine.</p>
+<h2>Turning every chat into a document on Android</h2>
+<p>If you'd rather browse your history on your phone like a set of documents, <strong>MD Reader Pro</strong> can import the ZIP directly. You don't need to extract it.</p>
+<ol>
+<li>Download the export ZIP to your phone.</li>
+<li>Open <strong>MD Reader</strong>, tap the books icon at the top right to open the <strong>Library</strong>, and go to the <strong>AI chats</strong> tab.</li>
+<li>Tap <strong>Import AI conversations</strong> and pick the ZIP.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dexport-chatgpt-conversations" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<p>Each conversation becomes one document, shown formatted: headings, tables, code blocks with highlighting, and math. The <strong>AI chats</strong> tab has its own search and sort, and it stays separate from your Scraps. Request a newer export later and import it again: new conversations are added and ones you continued are updated. Any chat can also be copied to Scraps.</p>
+<p>Importing is part of the one-time Pro purchase. Reading and the rest of the basics are free. Claude's data export ZIP can be imported the same way. Gemini history import isn't available.</p>
+<p>MD Reader has no internet access and no connection to your ChatGPT account. It reads only the file you give it, so to see newer chats you need a newer export.</p>
+<h2>Keeping a single answer as a .md file for free</h2>
+<p>For one good answer rather than your whole history, you don't need an export at all:</p>
+<ol>
+<li>Tap copy under the answer in ChatGPT.</li>
+<li>In MD Reader, tap <strong>Paste from clipboard</strong>.</li>
+<li>Tap <strong>⋮</strong> → <strong>Save as…</strong> and save it as a <code>.md</code> file.</li>
+</ol>
+<p>That gives you a real markdown file that any app can open. More tips, like asking the assistant to tidy the answer first, are in <a href="../save-ai-answers-as-markdown/">how to save AI answers as markdown</a>. If you only want to read a reply formatted, see <a href="../view-chatgpt-markdown-on-phone/">viewing ChatGPT markdown on your phone</a>.</p>
+<h2>What about Claude?</h2>
+<p>Claude also offers a data export, but Anthropic's help center says it can't be started from the iOS or Android app. Use the web or desktop app: <strong>Settings</strong> → <strong>Privacy</strong> → <strong>Export data</strong>. The download link arrives by email and expires 24 hours after it's created. The export doesn't include files you originally uploaded. To read Claude replies on your phone day to day, see <a href="../claude-markdown-on-android/">Claude markdown on Android</a>.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dexport-chatgpt-conversations" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · Pro one-time purchase · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/save-ai-answers-as-markdown/">How to save AI chat answers as markdown files on Android</a><span>Keep your best ChatGPT, Claude and Gemini answers as .md files on your phone, formatted, searchable and readable in any app.</span></li><li><a href="/md-reader-site/guides/view-chatgpt-markdown-on-phone/">How to read ChatGPT answers as formatted markdown on your phone</a><span>Copied a long ChatGPT answer and lost the formatting? Paste it into a markdown viewer to get headings, tables and code back on Android.</span></li><li><a href="/md-reader-site/guides/claude-markdown-on-android/">How to read and save Claude answers on Android</a><span>Claude&#x27;s long answers and documents are written in markdown. Here&#x27;s how to read them formatted and keep them as .md files on Android.</span></li><li><a href="/md-reader-site/guides/no-app-can-open-md-file/">Fix: &quot;No app can open this file&quot; for .md files on Android</a><span>Android says no app can open your .md file? Here&#x27;s why it happens and how to fix it in a minute.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/export-chatgpt-conversations/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/export-chatgpt-conversations/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/export-chatgpt-conversations/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/export-chatgpt-conversations/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/export-chatgpt-conversations/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

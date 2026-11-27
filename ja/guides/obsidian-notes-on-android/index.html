@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AndroidでObsidianアプリを使わずにノートを読む方法 · MD Reader</title>
+<meta name="description" content="Obsidianの保管庫（Vault）は.mdファイルのフォルダにすぎないため、AndroidのMarkdownビューアでノートを開けます。アプリをインストールせずにAndroidでObsidianノートを読む手順や、見た目の違い、注意点を解説します。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/obsidian-notes-on-android/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/obsidian-notes-on-android/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/obsidian-notes-on-android/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/obsidian-notes-on-android/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/obsidian-notes-on-android/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/obsidian-notes-on-android/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/obsidian-notes-on-android/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AndroidでObsidianアプリを使わずにノートを読む方法 · MD Reader">
+<meta property="og:description" content="Obsidianの保管庫（Vault）は.mdファイルのフォルダにすぎないため、AndroidのMarkdownビューアでノートを開けます。アプリをインストールせずにAndroidでObsidianノートを読む手順や、見た目の違い、注意点を解説します。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/obsidian-notes-on-android/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AndroidでObsidianアプリを使わずにノートを読む方法", "description": "Obsidianの保管庫（Vault）は.mdファイルのフォルダにすぎないため、AndroidのMarkdownビューアでノートを開けます。アプリをインストールせずにAndroidでObsidianノートを読む手順や、見た目の違い、注意点を解説します。", "inLanguage": "ja", "datePublished": "2026-11-26", "dateModified": "2026-11-26", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/obsidian-notes-on-android/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>AndroidでObsidianアプリを使わずにノートを読む方法</h1>
+<p class="meta">更新日: <time datetime="2026-11-26">2026-11-26</time></p>
+<p>Obsidianのノートは通常の<code>.md</code>ファイルであるため、AndroidにObsidianアプリをインストールしなくても読むことができます。ノートをスマートフォンにコピーすれば、一般的なMarkdownリーダーで開くことができ、見出し、リスト、表、チェックリストがきれいに表示されます。</p>
+<p>もちろん、Obsidianには公式のAndroidアプリがあるため、PCと同じ環境をスマートフォンでも完全に再現したい場合はそれが最適です。しかし、「いくつかのノートをざっと確認したい」「自分のものではない端末で読みたい」「シンプルに閲覧だけ行いたい」というケースもあるでしょう。この記事では、そうした場面での閲覧方法を解説します。</p>
+<h2>Obsidianがなくてもノートを開ける理由</h2>
+<p>Obsidianはすべてのデータを<strong>保管庫（Vault）</strong>に保存します。<a href="https://obsidian.md/help/data-storage">公式ヘルプページ</a>にある通り、保管庫の実体はパソコン上のフォルダ（およびその中のサブフォルダ）にすぎません。中の各ノートは、<code>#</code>や<code>-</code>などの記号で見出しやリストを記述するプレーンテキストファイル（Markdown形式）です（Markdownについて詳しくは<a href="../what-is-md-file/">「.mdファイルとは」</a>をご覧ください）。</p>
+<p>そのため、特別なデータベースのロック解除などは不要です。Markdownを理解できるアプリであれば、どのアプリでもノートを読むことができます。保管庫にはObsidianの設定が入った隠しフォルダ<code>.obsidian</code>も含まれていますが、これは無視してかまいません。</p>
+<h2>保管庫をスマートフォンに送る</h2>
+<p>ご自身にとって一番簡単な方法を選んでください。</p>
+<ul>
+<li><strong>Google Drive:</strong> 保管庫フォルダ、または必要なノートだけをアップロードし、Google Driveアプリから開きます。手順の詳細は<a href="../open-md-from-google-drive/">Google ドライブから.mdファイルを開く方法</a>をご覧ください。</li>
+<li><strong>メール:</strong> 1〜2件のノートをメールに添付して自分宛てに送信します。</li>
+<li><strong>USBケーブル:</strong> フォルダをスマートフォンの内部ストレージや「ダウンロード」フォルダにコピーします。</li>
+</ul>
+<p>すでに別の方法で保管庫がスマートフォンに同期されている場合は、ファイルはすでに端末内にあります。<strong>Files</strong>（Samsung端末の場合は<strong>マイファイル</strong>）で探してみてください。</p>
+<h2>個別のノートや保管庫全体を読む</h2>
+<p>1つのノートを読むには、<code>.md</code>ファイルをタップして<strong>MD Reader</strong>を選択するか、アプリを起動して<strong>ファイルを開く</strong>をタップします。</p>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dobsidian-notes-on-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<p>ノートが整形されて表示されます。<strong>目次</strong>には見出しが一覧表示されるため、長いノートでも読みたい場所にすばやくジャンプできます。また、前回読んでいた位置から再開できます。オフラインで動作し、MD Readerにはインターネット通信の権限が一切ないため、ノートが外部に送信される心配はありません。</p>
+<p>保管庫全体をまとめて扱う場合は、MD Reader Pro（1回限りの買い切り）の<strong>フォルダを開く</strong>機能が便利です。保管庫フォルダを一度開けば、含まれるすべてのノートを一括検索したり、ノート間のリンクをたどったりできます。なお、個別のノートを読む機能はすべて無料です。</p>
+<h2>Obsidian以外で表示した場合の違い</h2>
+<p>Obsidianで記述する内容のほとんどは標準的なMarkdownであるため、基本的には同じように表示されます。ただし、以下の点に留意してください。</p>
+<ul>
+<li><strong>コールアウト</strong>: <code>&gt; [!NOTE]</code> などの記法は、Obsidianと同様に強調ボックスとして表示されます。</li>
+<li><strong>フロントマター（Front matter）</strong>: ノートの先頭にある <code>---</code> で囲まれた設定ブロックは、生のテキストではなくカード形式でコンパクトに表示されます。</li>
+<li><strong>チェックリスト、表、脚注、数式、Mermaid図</strong>: オフライン環境でもすべて正しく描画されます。</li>
+<li><strong>Wikiリンク（Wikilinks）</strong>: <code>[[会議メモ]]</code> のような記述はObsidianのデフォルトのリンク形式ですが、Markdownの標準仕様ではないため、他のアプリではリンクとして扱われない場合があります。Obsidianの設定で標準形式のリンクを出力するように変更することも可能です（設定の <strong>ファイルとリンク</strong> で <strong>[[内部リンク]] の形式を使用</strong> をオフにします）。</li>
+<li><strong>プラグインの出力</strong>: プラグインが生成する表示は、Obsidianの実行中に作られます。Obsidian以外のアプリでは、ノートに実際に書かれているテキストそのままが表示され、プラグインが動的に追加する内容は表示されません。</li>
+<li><strong>画像</strong>: MD Readerは一切インターネット通信を行わないため、Web上のURLを指定した画像は読み込まれません。</li>
+</ul>
+<h2>編集時の動作と注意点</h2>
+<p>スマートフォン上で誤字を修正したり、チェックボックスにチェックを入れたりできます。<strong>編集</strong>をタップすれば、記号を意識することなく整形された画面のまま入力できます（詳しくは<a href="../edit-markdown-without-syntax/">記法を使わずにMarkdownを編集する</a>をご覧ください）。また、チェックボックスは閲覧中にもタップでき、すぐにファイルへ保存されます。</p>
+<p>ただし、MD Reader自体には同期機能がない点にご注意ください。スマートフォンにノートをコピーした場合、編集されるのは端末上にあるコピーです。パソコン側の保管庫には、ファイルをパソコンへ戻すまで変更は反映されません。出先で頻繁に編集する場合は、同一のノートに異なるバージョンが生じないよう、どちらをメインとして扱うか決めておくことをおすすめします。</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dobsidian-notes-on-android" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは買い切り · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/what-is-md-file/">.md ファイルとは？ Android スマホで開く方法</a><span>.md ファイルはシンプルな書式設定のプレーンテキストです。その意味と Android で読む方法を解説します。</span></li><li><a href="/md-reader-site/ja/guides/open-md-from-google-drive/">Google Drive の .md ファイルを Android で開く方法</a><span>Google Drive でプレビューできない .md ファイルを、Android の Markdown ビューアーで綺麗にフォーマットして開く手順を解説します。</span></li><li><a href="/md-reader-site/ja/guides/edit-markdown-without-syntax/">Markdown の書き方を知わずにファイルを編集する方法</a><span>Android で普通の説明文書のように .md ファイルを編集できます。装飾されたページに直接入力すると、自動で Markdown の記号に変換されます。</span></li><li><a href="/md-reader-site/ja/guides/offline-markdown-viewer/">Android向け完全オフラインMarkdownビューア：インターネット権限なしが重要な理由</a><span>日記や業務メモ、AIの回答など、Markdown文書には機密情報が多く含まれます。アプリがファイルを外部送信できないか確認する方法と、インターネット通信の権限を一切持たない完全オフラインのMarkdownビューアの重要性について解説します。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/obsidian-notes-on-android/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/obsidian-notes-on-android/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/obsidian-notes-on-android/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/obsidian-notes-on-android/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/obsidian-notes-on-android/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

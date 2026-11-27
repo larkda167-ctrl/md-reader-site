@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://larkda167-ctrl.github.io/md-reader-site/sitemap.xml

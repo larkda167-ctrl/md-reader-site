@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT の会話をエクスポートして Markdown で読む方法 · MD Reader</title>
+<meta name="description" content="ChatGPT のデータエクスポートは JSON 形式の ZIP ファイルです。その取得方法と、Android で読みやすい文書に変換する方法を解説します。">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/export-chatgpt-conversations/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/export-chatgpt-conversations/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/export-chatgpt-conversations/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT の会話をエクスポートして Markdown で読む方法 · MD Reader">
+<meta property="og:description" content="ChatGPT のデータエクスポートは JSON 形式の ZIP ファイルです。その取得方法と、Android で読みやすい文書に変換する方法を解説します。">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/export-chatgpt-conversations/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ChatGPT の会話をエクスポートして Markdown で読む方法", "description": "ChatGPT のデータエクスポートは JSON 形式の ZIP ファイルです。その取得方法と、Android で読みやすい文書に変換する方法を解説します。", "inLanguage": "ja", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/ja/guides/export-chatgpt-conversations/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/ja/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/ja/guides/">ガイド</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/ja/">ホーム</a> › <a href="/md-reader-site/ja/guides/">ガイド</a></nav>
+<article class="doc">
+<h1>ChatGPT の会話をエクスポートして Markdown で読む方法</h1>
+<p class="meta">更新日: <time datetime="2026-11-25">2026-11-25</time></p>
+<p>ChatGPT では全チャット履歴をエクスポートできますが、Markdown ファイル形式では取得できません。プログラム向けのデータ形式である JSON による会話データと、簡易的なビューアーページが含まれた ZIP ファイルが届くため、書式付き文書として読むには、そのビューアーを使うか、各チャットを自動変換してくれるアプリにインポートする必要があります。</p>
+<p>この記事ではその両方の方法と、1つの回答を <code>.md</code> ファイルとして保存する無料の簡単な方法を解説します。</p>
+<h2>エクスポート内容について</h2>
+<p>OpenAI のヘルプセンターによると、ダウンロードした ZIP には以下のものが含まれています。</p>
+<ul>
+<li>ブラウザで開き、会話を検索できるエクスポート用ビューアー <code>index.html</code></li>
+<li>JSON ファイル形式の会話データ、および CSV やその他の形式の他のアカウントデータ</li>
+<li>古いエクスポートでは、ビューアーの代わりに <code>chat.html</code> ファイルが含まれる場合がある</li>
+</ul>
+<p><code>.md</code> ファイルのフォルダはありません。各回答のテキストは JSON の中にあり、Markdown の記号（<code>#</code>、<code>**</code>、<code>|</code>）もそのまま含まれています。テキストアプリで JSON を開くと括弧と引用符の山になってしまうため、エクスポートデータは最初は読みにくく感じられます。</p>
+<h2>エクスポートをリクエストする方法</h2>
+<p>ウェブの場合: サインインし、プロフィールメニューを開き、<strong>設定</strong> → <strong>データコントロール</strong> → <strong>データをエクスポート</strong> の下の <strong>エクスポート</strong> を選択し、確認します。</p>
+<p>Android の場合: ChatGPT アプリのプロフィールメニューから <strong>設定</strong> を開き、<strong>データコントロール</strong> → <strong>データをエクスポート</strong> を選択して確認します。アプリからウェブへ誘導された場合は、そちらで手順を完了してください。</p>
+<p>OpenAI が挙げているいくつかの注意点:</p>
+<ul>
+<li><strong>データをダウンロード</strong> リンクが記載されたメール（または SMS）が届きます。到着までに最大 7 日かかる場合があります。</li>
+<li>リンクは受信後 24 時間で有効期限が切れます。また、同じアカウントにサインインしている必要があります。</li>
+<li>お使いの携帯電話でリンクが開かない場合は、パソコンでお試しください。</li>
+<li>Business、Enterprise、ChatGPT for Healthcare のワークスペースでは、セルフサービスのエクスポートを利用できません。</li>
+<li>すでに削除したチャットをエクスポートで復元することはできません。</li>
+</ul>
+<p>ファイルにはすべての履歴が含まれているため、安全な場所に保管してください。</p>
+<h2>内蔵ビューアーで読む</h2>
+<p>最も簡単な方法は、OpenAI が同梱しているビューアーを使用することです。ZIP を展開し、ブラウザで <code>index.html</code> を開き、<strong>フォルダを選択</strong> をタップして展開したフォルダを選びます。ブラウザ上でローカルに動作し、ファイルがアップロードされることはありません。ZIP の展開やフォルダの選択を普段から行うパソコンで行うのが一番簡単です。</p>
+<h2>Android ですべてのチャットを文書に変換する</h2>
+<p>携帯電話上で履歴を書類のように閲覧したい場合は、<strong>MD Reader Pro</strong> を使えば ZIP を直接インポートできます。展開する必要はありません。</p>
+<ol>
+<li>エクスポートした ZIP をスマホにダウンロードします。</li>
+<li><strong>MD Reader</strong> を開き、右上の本アイコンをタップして <strong>ライブラリ</strong> を開き、<strong>AI チャット</strong> タブに移動します。</li>
+<li><strong>AI チャットをインポート</strong> をタップして ZIP を選択します。</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dexport-chatgpt-conversations" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a></p>
+<p>それぞれの会話が 1 つの文書になり、見出し、表、ハイライト付きコードブロック、数式が書式設定されて表示されます。<strong>AI チャット</strong> タブには独自の検索と並び替えがあり、スクラップとは別に保持されます。後から新しいエクスポートをリクエストして再度インポートすると、新しい会話が追加され、継続した会話は更新されます。どのチャットでもスクラップにコピーできます。</p>
+<p>インポート機能は、一度限りの Pro 購入に含まれています。閲覧およびその他の基本機能は無料です。Claude のデータ エクスポート ZIP も同様の方法でインポートできます。Gemini の履歴インポートは利用できません。</p>
+<p>MD Reader はインターネット接続を持たず、ChatGPT アカウントとも接続していません。提供されたファイルのみを読み取るため、新しいチャットを表示するには新しいエクスポートが必要です。</p>
+<h2>1 つの回答を .md ファイルとして無料で保存する</h2>
+<p>履歴全体ではなく、1 つの良い回答だけが欲しい場合は、エクスポートは必要ありません:</p>
+<ol>
+<li>ChatGPT の回答の下にあるコピーをタップします。</li>
+<li><strong>MD Reader</strong> で <strong>クリップボードから貼り付け</strong> をタップします。</li>
+<li><strong>その他</strong> → <strong>名前を付けて保存…</strong> をタップし、<code>.md</code> ファイルとして保存します。</li>
+</ol>
+<p>これにより、どのアプリでも開ける本物の Markdown ファイルが手に入ります。アシスタントにあらかじめ回答を整理してもらうなどのその他のヒントについては、<a href="../save-ai-answers-as-markdown/">AI の回答を markdown として保存する方法</a> をご覧ください。返信を書式設定された状態で読みたいだけの場合は、<a href="../view-chatgpt-markdown-on-phone/">スマホで ChatGPT の markdown を見る</a> をご覧ください。</p>
+<h2>Claude の場合は？</h2>
+<p>Claude もデータのエクスポートを提供していますが、Anthropic のヘルプセンターによると、iOS や Android アプリからは開始できないとのことです。ウェブまたはデスクトップアプリの <strong>設定</strong> → <strong>プライバシー</strong> → <strong>データをエクスポート</strong> をご利用ください。ダウンロードリンクはメールで届き、作成後 24 時間で期限が切れます。元々アップロードしたファイルはエクスポートに含まれません。日々の生活の中でスマホで Claude の返信を読むには、<a href="../claude-markdown-on-android/">Android での Claude の markdown</a> をご覧ください。</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>MD Readerを試す</strong><p>Android用の無料Markdownビューア＆エディタ。アカウント不要、広告なし、インターネット権限なし。</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=ja&amp;referrer=utm_source%3Dsite%26utm_medium%3Dja%26utm_campaign%3Dexport-chatgpt-conversations" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Google Playで手に入れよう</span></a><small>無料 · Proは買い切り · 広告なし</small></div></aside>
+<section class="related"><h2>関連ガイド</h2><ul class="guides"><li><a href="/md-reader-site/ja/guides/save-ai-answers-as-markdown/">Android で AI チャットの回答を Markdown ファイルとして保存する方法</a><span>ChatGPT、Claude、Gemini の回答をスマホに .md ファイルとして保存。綺麗に整形され検索しやすいノートとして管理できます。</span></li><li><a href="/md-reader-site/ja/guides/view-chatgpt-markdown-on-phone/">ChatGPT の回答をスマホで綺麗に読む方法</a><span>ChatGPT の長い回答をコピーして崩れていませんか？Android の Markdown ビューアーに貼り付ければ、見出しや表、コードが綺麗に復活します。</span></li><li><a href="/md-reader-site/ja/guides/claude-markdown-on-android/">Android で Claude の回答をきれいに読み保存する方法</a><span>Claude の長文やマークダウン文書を Android で見やすく表示し、.md ファイルとして保存する方法を解説します。</span></li><li><a href="/md-reader-site/ja/guides/no-app-can-open-md-file/">Androidで.mdファイルが開けない時の解決策：「開くアプリがありません」</a><span>Androidで.mdファイルをタップした際に「このファイルを開くアプリがありません」と表示される原因と解決手順を解説します。Markdownビューアを導入してファイルを開く方法や、エラーが解消しない場合の確認ポイントをまとめました。</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD ReaderはAndroid用のオフラインMarkdownビューア＆エディタです。</p>
+  <p><a href="/md-reader-site/ja/guides/">すべてのガイド</a> · <a href="/md-reader-site/privacy/">プライバシーポリシー</a> · お問い合わせ: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="言語"><a href="/md-reader-site/guides/export-chatgpt-conversations/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/export-chatgpt-conversations/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/export-chatgpt-conversations/" hreflang="ja" aria-current="true">日本語</a><a href="/md-reader-site/es/guides/export-chatgpt-conversations/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/export-chatgpt-conversations/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>

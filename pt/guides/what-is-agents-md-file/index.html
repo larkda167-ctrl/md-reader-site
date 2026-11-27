@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que é um arquivo AGENTS.md? O que ele faz e o que contém · MD Reader</title>
+<meta name="description" content="AGENTS.md é um arquivo de texto com instruções que agentes de IA como o Codex leem antes de trabalhar em projetos. Veja o que colocar nele.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-agents-md-file/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-agents-md-file/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/what-is-agents-md-file/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="O que é um arquivo AGENTS.md? O que ele faz e o que contém · MD Reader">
+<meta property="og:description" content="AGENTS.md é um arquivo de texto com instruções que agentes de IA como o Codex leem antes de trabalhar em projetos. Veja o que colocar nele.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-agents-md-file/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "O que é um arquivo AGENTS.md? O que ele faz e o que contém", "description": "AGENTS.md é um arquivo de texto com instruções que agentes de IA como o Codex leem antes de trabalhar em projetos. Veja o que colocar nele.", "inLanguage": "pt", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/pt/guides/what-is-agents-md-file/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/pt/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/pt/guides/">Guias</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=pt-BR&amp;referrer=utm_source%3Dsite%26utm_medium%3Dpt%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponível no Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/pt/">Início</a> › <a href="/md-reader-site/pt/guides/">Guias</a></nav>
+<article class="doc">
+<h1>O que é um arquivo AGENTS.md? O que ele faz e o que contém</h1>
+<p class="meta">Atualizado: <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Um arquivo <code>AGENTS.md</code> é um arquivo de texto simples contendo instruções para agentes de codificação de IA, que são as ferramentas que escrevem e alteram código para você, como o Codex. O agente o lê antes de começar a trabalhar, para já saber como compilar o projeto, testá-lo e quais regras seguir.</p>
+<p>Ele é escrito em markdown, uma maneira simples de formatar texto usando símbolos como <code>#</code> e <code>**</code>. O arquivo não executa nada por si só, então abri-lo para leitura é seguro. Editá-lo é diferente: o agente agirá com base no que você alterar.</p>
+<h2>O que colocar nele</h2>
+<p>O <a href="https://agents.md/">site do AGENTS.md</a> descreve o arquivo como um README para agentes. Um <code>README.md</code> é escrito para pessoas: explica o que é o projeto e como começar. O <code>AGENTS.md</code> contém os detalhes extras que um agente precisa, os quais apenas lotariam o README.</p>
+<p>Não há campos obrigatórios. É um markdown comum e você pode usar os cabeçalhos que quiser. O site sugere cobrir tópicos como:</p>
+<ul>
+<li><strong>Visão geral do projeto:</strong> o que o projeto é, em poucas linhas</li>
+<li><strong>Comandos de compilação e teste:</strong> para que o agente possa verificar seu próprio trabalho</li>
+<li><strong>Estilo de código:</strong> as convenções que seu projeto segue</li>
+<li><strong>Instruções de teste:</strong> o que deve passar para que o trabalho seja considerado concluído</li>
+<li><strong>Considerações de segurança:</strong> qualquer coisa que o agente deva manipular com cuidado</li>
+</ul>
+<p>Regras de commit e pull request ou etapas de implantação também podem ser incluídas. Um exemplo simples se parece com isto:</p>
+<pre><code class="language-markdown"># AGENTS.md
+
+## Comandos
+- Instalação: npm install
+- Teste: npm test (execute isto antes de terminar)
+
+## Estilo de código
+- Mantenha o texto voltado para o usuário em src/i18n
+
+## Não mexa
+- Os arquivos em /generated são criados por um script
+</code></pre>
+<h2>Onde ele fica</h2>
+<p>Coloque o arquivo na pasta principal do projeto. Isso é suficiente para a maioria dos projetos.</p>
+<p>Um projeto grande composto por várias partes separadas pode ter um <code>AGENTS.md</code> dentro de cada parte. De acordo com o site do AGENTS.md, os agentes leem o arquivo mais próximo na árvore de pastas, então o mais próximo vence:</p>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Usado para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AGENTS.md</code> na pasta principal</td>
+<td>Instruções para todo o projeto</td>
+</tr>
+<tr>
+<td><code>AGENTS.md</code> em uma subpasta</td>
+<td>Instruções para o trabalho dentro dessa pasta. Tem precedência ali</td>
+</tr>
+</tbody>
+</table>
+<p>O que você digita para o agente no chat vem antes de ambos. Uma solicitação explícita sua substitui o arquivo.</p>
+<h2>Quais ferramentas o leem</h2>
+<p>O <code>AGENTS.md</code> não está vinculado a um único produto. É um formato aberto, atualmente gerenciado pela Agentic AI Foundation sob a Linux Foundation, e surgiu do trabalho de várias equipes, incluindo o Codex da OpenAI, o Jules do Google, Cursor, Amp e Factory.</p>
+<p>O site do AGENTS.md lista mais de vinte ferramentas que o utilizam, entre elas Codex, Cursor, Gemini CLI, o agente de codificação do GitHub Copilot, Aider, Zed, Windsurf e VS Code. Esse é o objetivo do formato: você escreve as regras do seu projeto uma vez em vez de manter um arquivo separado para cada ferramenta. Cada ferramenta tem suas próprias especificidades, portanto, verifique a documentação dela caso um arquivo pareça não estar sendo detectado.</p>
+<h2>AGENTS.md e CLAUDE.md</h2>
+<p>O <code>CLAUDE.md</code> faz o mesmo trabalho para o Claude Code, o agente de codificação da Anthropic. Se você vir ambos em um projeto, eles são dois conjuntos de instruções permanentes para ferramentas diferentes, e vale a pena verificar se eles não se contradizem. Nosso guia sobre <a href="../what-is-claude-md-file/">o que é um arquivo CLAUDE.md</a> aborda esse assunto, e <a href="../claude-code-codex-md-files/">os arquivos .md criados por agentes de codificação</a> explica os outros que você pode encontrar ao lado dele.</p>
+<h2>O que ter em mente</h2>
+<p>Não coloque senhas ou chaves de API no arquivo. Ele geralmente fica no projeto junto com o código, então qualquer pessoa que possa ver o projeto pode lê-lo.</p>
+<p>Mantenha-o atualizado. O agente confia no que está escrito ali, portanto, um comando de teste desatualizado ou uma regra que você não segue mais o enviará na direção errada. Quando perceber que está corrigindo o mesmo erro duas vezes, adicione uma linha.</p>
+<h2>Lendo no seu celular</h2>
+<p>Aberto em um aplicativo de texto simples, o arquivo mostra os símbolos brutos <code>#</code> e <code>**</code>. Para lê-lo formatado no Android:</p>
+<ol>
+<li>Envie-o para o seu celular. Agentes de codificação geralmente rodam em um computador, então use o Google Drive, um anexo de e-mail ou um cabo USB.</li>
+<li>Toque no arquivo e escolha <strong>MD Reader</strong>, ou use <strong>Abrir arquivo</strong> no aplicativo.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=pt-BR&amp;referrer=utm_source%3Dsite%26utm_medium%3Dpt%26utm_campaign%3Dwhat-is-agents-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponível no Google Play</span></a></p>
+<p>Cabeçalhos, tabelas e blocos de código aparecem formatados, e o <strong>Sumário</strong> permite pular entre as seções. Tags como <code>&lt;example&gt;</code>, que são comuns em arquivos de instrução, são mostradas como escritas em vez de desaparecerem. Para o Drive, consulte <a href="../open-md-from-google-drive/">como abrir arquivos .md do Google Drive</a>.</p>
+<p>O MD Reader não se conecta ao Codex ou a qualquer outra ferramenta de codificação e não sincroniza com o seu computador, portanto, o que você está lendo é uma cópia. Envie-o novamente após alterações. Você pode tocar em <strong>Editar</strong> e alterar a cópia, mas o agente não verá isso até que você envie o arquivo de volta para o seu computador.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Experimente o MD Reader</strong><p>Um leitor e editor de Markdown grátis para Android. Sem conta, sem anúncios e sem permissão de internet.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=pt-BR&amp;referrer=utm_source%3Dsite%26utm_medium%3Dpt%26utm_campaign%3Dwhat-is-agents-md-file" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Disponível no Google Play</span></a><small>Grátis · Pro com compra única · sem anúncios</small></div></aside>
+<section class="related"><h2>Guias relacionados</h2><ul class="guides"><li><a href="/md-reader-site/pt/guides/what-is-claude-md-file/">O que é um arquivo CLAUDE.md? O que ele faz e o que incluir</a><span>O CLAUDE.md é um arquivo de texto com instruções permanentes para o Claude Code. Veja o que colocar nele e quando criar um.</span></li><li><a href="/md-reader-site/pt/guides/claude-code-codex-md-files/">O que são os arquivos .md do Claude Code e do Codex?</a><span>Descubra o que são os arquivos .md gerados por agentes de IA, quais importam e como ler todos eles no seu celular.</span></li><li><a href="/md-reader-site/pt/guides/open-md-from-google-drive/">Como abrir arquivos .md do Google Drive no Android</a><span>O Google Drive não exibe arquivos .md formatados. Veja como abri-los corretamente em um visualizador de markdown no Android.</span></li><li><a href="/md-reader-site/pt/guides/edit-markdown-without-syntax/">Como editar arquivos markdown sem precisar aprender a sintaxe</a><span>Edite arquivos .md no Android como um documento comum. Digite na página formatada e os símbolos markdown são aplicados.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>O MD Reader é um leitor e editor de Markdown offline para Android.</p>
+  <p><a href="/md-reader-site/pt/guides/">Todos os guias</a> · <a href="/md-reader-site/privacy/">Política de privacidade</a> · Contato: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Idioma"><a href="/md-reader-site/guides/what-is-agents-md-file/" hreflang="en">English</a><a href="/md-reader-site/ko/guides/what-is-agents-md-file/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/what-is-agents-md-file/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/what-is-agents-md-file/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/what-is-agents-md-file/" hreflang="pt" aria-current="true">Português</a></p>
+</div></footer>
+</body>
+</html>

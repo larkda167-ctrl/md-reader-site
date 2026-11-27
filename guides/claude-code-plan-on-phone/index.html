@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to read a Claude Code plan on your phone · MD Reader</title>
+<meta name="description" content="Claude Code saves the plans it writes in plan mode as files on your computer. Here&#x27;s where to find them and how to read one comfortably on Android.">
+<link rel="canonical" href="https://larkda167-ctrl.github.io/md-reader-site/guides/claude-code-plan-on-phone/">
+<link rel="alternate" hreflang="en" href="https://larkda167-ctrl.github.io/md-reader-site/guides/claude-code-plan-on-phone/"><link rel="alternate" hreflang="ko" href="https://larkda167-ctrl.github.io/md-reader-site/ko/guides/claude-code-plan-on-phone/"><link rel="alternate" hreflang="ja" href="https://larkda167-ctrl.github.io/md-reader-site/ja/guides/claude-code-plan-on-phone/"><link rel="alternate" hreflang="es" href="https://larkda167-ctrl.github.io/md-reader-site/es/guides/claude-code-plan-on-phone/"><link rel="alternate" hreflang="pt" href="https://larkda167-ctrl.github.io/md-reader-site/pt/guides/claude-code-plan-on-phone/"><link rel="alternate" hreflang="x-default" href="https://larkda167-ctrl.github.io/md-reader-site/guides/claude-code-plan-on-phone/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to read a Claude Code plan on your phone · MD Reader">
+<meta property="og:description" content="Claude Code saves the plans it writes in plan mode as files on your computer. Here&#x27;s where to find them and how to read one comfortably on Android.">
+<meta property="og:url" content="https://larkda167-ctrl.github.io/md-reader-site/guides/claude-code-plan-on-phone/">
+<meta property="og:image" content="https://larkda167-ctrl.github.io/md-reader-site/assets/icon.png">
+<meta name="theme-color" content="#1f6feb">
+<meta name="google-site-verification" content="fiG8ozzZEvzf3k3mMkv375w0ivzqAwI78hNHG3-MmSM">
+<link rel="icon" href="/md-reader-site/assets/icon.png">
+<link rel="stylesheet" href="/md-reader-site/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to read a Claude Code plan on your phone", "description": "Claude Code saves the plans it writes in plan mode as files on your computer. Here's where to find them and how to read one comfortably on Android.", "inLanguage": "en", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "mainEntityOfPage": "https://larkda167-ctrl.github.io/md-reader-site/guides/claude-code-plan-on-phone/", "author": {"@type": "Organization", "name": "MD Reader"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/md-reader-site/"><img src="/md-reader-site/assets/icon.png" alt="" width="28" height="28">MD Reader</a>
+  <nav><a href="/md-reader-site/guides/">Guides</a><a class="btn btn-sm" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dheader" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="/md-reader-site/">Home</a> › <a href="/md-reader-site/guides/">Guides</a></nav>
+<article class="doc">
+<h1>How to read a Claude Code plan on your phone</h1>
+<p class="meta">Updated: <time datetime="2026-11-27">2026-11-27</time></p>
+<p>To read a Claude Code plan on your phone, copy the plan file from your computer to the phone and open it in a markdown reader. Claude Code keeps the plans it writes in plan mode in a folder on your computer, so the only real work is finding that folder and moving one file.</p>
+<h2>What a plan is and where Claude Code saves it</h2>
+<p>Claude Code is an AI coding assistant that runs in a terminal (the text window where you type commands). In <strong>plan mode</strong> it looks around your project and writes a plan, but doesn't change your files yet. You turn plan mode on by pressing <code>Shift+Tab</code>, or by starting a single message with <code>/plan</code>. Then you read the plan and choose whether Claude should go ahead or keep planning.</p>
+<p>According to Claude Code's settings documentation, plan files are stored in <code>~/.claude/plans</code> by default. The <code>~</code> stands for your home folder, so on Windows that's <code>C:\Users\&lt;your name&gt;\.claude\plans</code>. On a Mac it's inside your user folder. The <code>.claude</code> folder starts with a dot, which means it may be hidden: on a Mac press <code>Cmd+Shift+.</code> in Finder to show it, and on Windows you can paste the path straight into the File Explorer address bar.</p>
+<p>While a plan is waiting for your approval, you can also press <code>Ctrl+G</code> to open it in your computer's default text editor.</p>
+<h2>Keeping plans inside your project</h2>
+<p>If you'd rather find plans next to your code, Claude Code has a setting called <code>plansDirectory</code>. It takes a folder path relative to your project, for example <code>"plansDirectory": "./plans"</code> in your project's <code>.claude/settings.json</code> file. New plans are then written to a <code>plans</code> folder in the project.</p>
+<p>This helps if your project folder is already synced to Google Drive or another cloud service, because the plans travel with it. If the path points outside the project, Claude Code ignores it and uses the default folder.</p>
+<h2>Opening the plan on your phone</h2>
+<ol>
+<li>Send the plan file to yourself. Uploading it to Google Drive, emailing it as an attachment or copying it over a USB cable all work.</li>
+<li>On your phone, tap the file and choose <strong>MD Reader</strong>, or open the app and use <strong>Open file</strong>.</li>
+</ol>
+<p class="inline-cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dclaude-code-plan-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a></p>
+<p>MD Reader opens files ending in <code>.md</code> or <code>.markdown</code> and shows them formatted: headings become real headings, numbered steps line up, and file names or commands appear in code blocks with syntax highlighting and a <strong>Copy</strong> button. Wide tables scroll sideways instead of squeezing, and Mermaid diagrams are drawn as pictures. All of this works offline, and the app has no internet permission, so the plan never leaves your phone.</p>
+<p>One thing to know: MD Reader doesn't connect to Claude Code and doesn't sync with your computer. You're reading a copy. If you ask Claude to revise the plan, send the new file over again. The steps for Drive are in <a href="../open-md-from-google-drive/">how to open .md files from Google Drive</a>.</p>
+<h2>Reading a long plan comfortably</h2>
+<p>Plans for bigger changes can run to several screens. A few things make them easier to follow:</p>
+<ul>
+<li><strong>Contents</strong> lists the plan's headings and highlights the section you're in, so you can jump straight to "Files to change" or "Testing".</li>
+<li><strong>Find in document</strong> searches for a file name or word inside the plan.</li>
+<li>The plan reopens where you left off, so you can read half on the bus and finish later.</li>
+<li>In the <strong>Aa</strong> settings you can pick a dark or sepia theme, a larger text size and a narrower page width.</li>
+</ul>
+<p>If Claude made other files along the way, such as notes or a README, the <a href="../claude-code-codex-md-files/">guide to the .md files coding agents create</a> explains which ones are worth reading. To open a whole folder of them at once and search across every document, you need the folder workspace in MD Reader Pro, a one-time purchase on Google Play. Reading single files is free.</p>
+<h2>Taking notes and sending changes back</h2>
+<p>If the plan includes a task list, you can tick the checkboxes while reading and they're saved to the file immediately. To add a comment or change a step, tap <strong>Edit</strong> and type on the formatted page, without remembering any markdown symbols (<a href="../edit-markdown-without-syntax/">more on editing</a>).</p>
+<p>Remember that this only changes the copy on your phone. Claude Code won't see your notes until you send the file back to your computer and put it where Claude can read it, or simply paste your comments into the terminal next time you're at your desk. Many people find that the second option is enough: read on the phone, decide, then type "go ahead, but skip step 4" when they sit back down.</p>
+</article>
+<aside class="cta"><img src="/md-reader-site/assets/icon.png" alt="" width="56" height="56"><div><strong>Try MD Reader</strong><p>A free markdown viewer and editor for Android. No account, no ads, no internet permission.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.larkd.mdreader&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Den%26utm_campaign%3Dclaude-code-plan-on-phone" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 2.5v19l10-9.5L4 2.5zm11.4 10.8L6.6 21.7l11-6.3-2.2-2.1zm3.5-3.4-2.4-1.4-2.4 2.3 2.4 2.3 2.4-1.4c.9-.5.9-1.3 0-1.8zM6.6 2.3l8.8 8.4 2.2-2.1-11-6.3z"/></svg><span>Get it on Google Play</span></a><small>Free · Pro one-time purchase · no ads</small></div></aside>
+<section class="related"><h2>Related guides</h2><ul class="guides"><li><a href="/md-reader-site/guides/claude-code-codex-md-files/">What are the .md files Claude Code and Codex create?</a><span>Ask Claude Code or Codex to do something and .md files pile up in your project. Here&#x27;s what they are, which ones matter, and how to read them on your phone.</span></li><li><a href="/md-reader-site/guides/what-is-claude-md-file/">What is a CLAUDE.md file? What it does and what to put in it</a><span>CLAUDE.md is a text file of standing instructions that Claude Code reads at the start of every session. Here&#x27;s what goes in it and whether you need one.</span></li><li><a href="/md-reader-site/guides/open-md-from-google-drive/">How to open .md files from Google Drive on Android</a><span>Google Drive shows .md files as plain text or can&#x27;t preview them. Here&#x27;s how to open them formatted in a markdown viewer on Android.</span></li><li><a href="/md-reader-site/guides/markdown-checklist-android/">How to use markdown checklists on Android</a><span>Tick off - [ ] tasks in a .md file on your phone. Tap a checkbox and it&#x27;s saved to the file, no editing mode needed.</span></li><li><a href="/md-reader-site/guides/edit-markdown-without-syntax/">How to edit a markdown file without learning markdown</a><span>Edit .md files on Android like a normal document. Type on the formatted page and the markdown symbols are written for you.</span></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>MD Reader is an offline markdown viewer and editor for Android.</p>
+  <p><a href="/md-reader-site/guides/">All guides</a> · <a href="/md-reader-site/privacy/">Privacy policy</a> · Contact: <a href="mailto:larkda167@gmail.com">larkda167@gmail.com</a></p>
+  <p class="langs" aria-label="Language"><a href="/md-reader-site/guides/claude-code-plan-on-phone/" hreflang="en" aria-current="true">English</a><a href="/md-reader-site/ko/guides/claude-code-plan-on-phone/" hreflang="ko">한국어</a><a href="/md-reader-site/ja/guides/claude-code-plan-on-phone/" hreflang="ja">日本語</a><a href="/md-reader-site/es/guides/claude-code-plan-on-phone/" hreflang="es">Español</a><a href="/md-reader-site/pt/guides/claude-code-plan-on-phone/" hreflang="pt">Português</a></p>
+</div></footer>
+</body>
+</html>
